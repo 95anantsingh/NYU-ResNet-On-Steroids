@@ -1,0 +1,341 @@
+
+
+Run Config: 
+------------------------------
+data_path          : CIFAR10/
+train_batch_size   : 128
+val_batch_size     : 256
+test_batch_size    : 256
+epochs             : 100
+test_transform     : TestTransform_1
+train_transform    : TrainTransform_1
+model              : ResNet24_1
+optimizer          : adadelta
+learning_rate      : 0.1
+momentum           : 0.9
+weight_decay       : 0.0005
+schedule           : False
+validate           : True
+save               : True
+print_summary      : True
+no_training        : False
+save_plot          : True
+plot_transforms    : False
+output_file_prefix : AA1Test
+
+Running on  CUDA 
+
+Files already downloaded and verified
+Files already downloaded and verified
+
+
+Model Config: 
+-------------------------------------
+N (# Layers)	: 4 
+B (# Blocks)	: [3, 3, 2, 3] 
+C (# Channels)	: [64, 128, 128, 256] 
+F (Conv Kernel)	: [3, 3, 3, 3] 
+K (Skip Kernel)	: [1, 1, 1, 1] 
+P (Pool Kernel)	: 4
+
+
+Printing Model Summary...
+
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 32, 32]           1,728
+       BatchNorm2d-2           [-1, 64, 32, 32]             128
+            Conv2d-3           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-4           [-1, 64, 32, 32]             128
+            Conv2d-5           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-6           [-1, 64, 32, 32]             128
+        BasicBlock-7           [-1, 64, 32, 32]               0
+            Conv2d-8           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-9           [-1, 64, 32, 32]             128
+           Conv2d-10           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-11           [-1, 64, 32, 32]             128
+       BasicBlock-12           [-1, 64, 32, 32]               0
+           Conv2d-13           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-14           [-1, 64, 32, 32]             128
+           Conv2d-15           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-16           [-1, 64, 32, 32]             128
+       BasicBlock-17           [-1, 64, 32, 32]               0
+           Conv2d-18          [-1, 128, 16, 16]          73,728
+      BatchNorm2d-19          [-1, 128, 16, 16]             256
+           Conv2d-20          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-21          [-1, 128, 16, 16]             256
+           Conv2d-22          [-1, 128, 16, 16]           8,192
+      BatchNorm2d-23          [-1, 128, 16, 16]             256
+       BasicBlock-24          [-1, 128, 16, 16]               0
+           Conv2d-25          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-26          [-1, 128, 16, 16]             256
+           Conv2d-27          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-28          [-1, 128, 16, 16]             256
+       BasicBlock-29          [-1, 128, 16, 16]               0
+           Conv2d-30          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-31          [-1, 128, 16, 16]             256
+           Conv2d-32          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-33          [-1, 128, 16, 16]             256
+       BasicBlock-34          [-1, 128, 16, 16]               0
+           Conv2d-35            [-1, 128, 8, 8]         147,456
+      BatchNorm2d-36            [-1, 128, 8, 8]             256
+           Conv2d-37            [-1, 128, 8, 8]         147,456
+      BatchNorm2d-38            [-1, 128, 8, 8]             256
+           Conv2d-39            [-1, 128, 8, 8]          16,384
+      BatchNorm2d-40            [-1, 128, 8, 8]             256
+       BasicBlock-41            [-1, 128, 8, 8]               0
+           Conv2d-42            [-1, 128, 8, 8]         147,456
+      BatchNorm2d-43            [-1, 128, 8, 8]             256
+           Conv2d-44            [-1, 128, 8, 8]         147,456
+      BatchNorm2d-45            [-1, 128, 8, 8]             256
+       BasicBlock-46            [-1, 128, 8, 8]               0
+           Conv2d-47            [-1, 256, 4, 4]         294,912
+      BatchNorm2d-48            [-1, 256, 4, 4]             512
+           Conv2d-49            [-1, 256, 4, 4]         589,824
+      BatchNorm2d-50            [-1, 256, 4, 4]             512
+           Conv2d-51            [-1, 256, 4, 4]          32,768
+      BatchNorm2d-52            [-1, 256, 4, 4]             512
+       BasicBlock-53            [-1, 256, 4, 4]               0
+           Conv2d-54            [-1, 256, 4, 4]         589,824
+      BatchNorm2d-55            [-1, 256, 4, 4]             512
+           Conv2d-56            [-1, 256, 4, 4]         589,824
+      BatchNorm2d-57            [-1, 256, 4, 4]             512
+       BasicBlock-58            [-1, 256, 4, 4]               0
+           Conv2d-59            [-1, 256, 4, 4]         589,824
+      BatchNorm2d-60            [-1, 256, 4, 4]             512
+           Conv2d-61            [-1, 256, 4, 4]         589,824
+      BatchNorm2d-62            [-1, 256, 4, 4]             512
+       BasicBlock-63            [-1, 256, 4, 4]               0
+           Linear-64                   [-1, 10]           2,570
+================================================================
+Total params: 4,935,242
+Trainable params: 4,935,242
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 14.03
+Params size (MB): 18.83
+Estimated Total Size (MB): 32.87
+----------------------------------------------------------------
+
+
+Training...
+
+
+Epoch: 1 ;	Train Loss: 1.45900320 ;	Train Accuracy: 46.131 ;	Val Loss: 1.37974989 ; 	Val Accuracy: 53.260 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 2 ;	Train Loss: 0.93742299 ;	Train Accuracy: 66.618 ;	Val Loss: 1.13411992 ; 	Val Accuracy: 62.940 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 3 ;	Train Loss: 0.72747899 ;	Train Accuracy: 74.618 ;	Val Loss: 0.83186244 ; 	Val Accuracy: 71.520 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 4 ;	Train Loss: 0.60402475 ;	Train Accuracy: 78.896 ;	Val Loss: 0.74319671 ; 	Val Accuracy: 73.580 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 5 ;	Train Loss: 0.53147720 ;	Train Accuracy: 81.482 ;	Val Loss: 0.76132075 ; 	Val Accuracy: 73.980 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 6 ;	Train Loss: 0.47461503 ;	Train Accuracy: 83.633 ;	Val Loss: 0.76038524 ; 	Val Accuracy: 76.440 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 7 ;	Train Loss: 0.42990854 ;	Train Accuracy: 85.158 ;	Val Loss: 0.65670675 ; 	Val Accuracy: 79.040 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 8 ;	Train Loss: 0.39559921 ;	Train Accuracy: 86.216 ;	Val Loss: 0.78086447 ; 	Val Accuracy: 76.100 ;
+Epoch: 9 ;	Train Loss: 0.36454704 ;	Train Accuracy: 87.327 ;	Val Loss: 0.64385685 ; 	Val Accuracy: 79.680 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 10 ;	Train Loss: 0.34577525 ;	Train Accuracy: 88.000 ;	Val Loss: 0.63901401 ; 	Val Accuracy: 79.120 ;
+Epoch: 11 ;	Train Loss: 0.31601779 ;	Train Accuracy: 89.013 ;	Val Loss: 0.53979326 ; 	Val Accuracy: 82.580 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 12 ;	Train Loss: 0.29992110 ;	Train Accuracy: 89.582 ;	Val Loss: 0.54453003 ; 	Val Accuracy: 82.120 ;
+Epoch: 13 ;	Train Loss: 0.28003303 ;	Train Accuracy: 90.362 ;	Val Loss: 0.81292452 ; 	Val Accuracy: 77.960 ;
+Epoch: 14 ;	Train Loss: 0.26204773 ;	Train Accuracy: 90.889 ;	Val Loss: 0.53689669 ; 	Val Accuracy: 83.660 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 15 ;	Train Loss: 0.25446229 ;	Train Accuracy: 91.104 ;	Val Loss: 0.62928456 ; 	Val Accuracy: 82.540 ;
+Epoch: 16 ;	Train Loss: 0.23864424 ;	Train Accuracy: 91.689 ;	Val Loss: 0.50221399 ; 	Val Accuracy: 84.420 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 17 ;	Train Loss: 0.22343546 ;	Train Accuracy: 92.196 ;	Val Loss: 0.65212436 ; 	Val Accuracy: 81.060 ;
+Epoch: 18 ;	Train Loss: 0.21641176 ;	Train Accuracy: 92.469 ;	Val Loss: 0.57504247 ; 	Val Accuracy: 82.020 ;
+Epoch: 19 ;	Train Loss: 0.20504355 ;	Train Accuracy: 92.804 ;	Val Loss: 0.56464579 ; 	Val Accuracy: 83.100 ;
+Epoch: 20 ;	Train Loss: 0.19879711 ;	Train Accuracy: 93.122 ;	Val Loss: 0.64090313 ; 	Val Accuracy: 80.820 ;
+Epoch: 21 ;	Train Loss: 0.18256322 ;	Train Accuracy: 93.627 ;	Val Loss: 0.83746865 ; 	Val Accuracy: 78.000 ;
+Epoch: 22 ;	Train Loss: 0.17993414 ;	Train Accuracy: 93.653 ;	Val Loss: 0.66701488 ; 	Val Accuracy: 81.560 ;
+Epoch: 23 ;	Train Loss: 0.17509064 ;	Train Accuracy: 93.813 ;	Val Loss: 0.52606473 ; 	Val Accuracy: 84.560 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 24 ;	Train Loss: 0.16393887 ;	Train Accuracy: 94.198 ;	Val Loss: 0.56610824 ; 	Val Accuracy: 84.300 ;
+Epoch: 25 ;	Train Loss: 0.15773762 ;	Train Accuracy: 94.520 ;	Val Loss: 0.44200350 ; 	Val Accuracy: 86.660 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 26 ;	Train Loss: 0.14810827 ;	Train Accuracy: 94.753 ;	Val Loss: 0.41867867 ; 	Val Accuracy: 87.380 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 27 ;	Train Loss: 0.14448425 ;	Train Accuracy: 94.898 ;	Val Loss: 0.33801960 ; 	Val Accuracy: 89.160 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 28 ;	Train Loss: 0.14259214 ;	Train Accuracy: 95.040 ;	Val Loss: 0.45179631 ; 	Val Accuracy: 86.400 ;
+Epoch: 29 ;	Train Loss: 0.13468551 ;	Train Accuracy: 95.256 ;	Val Loss: 0.40646491 ; 	Val Accuracy: 87.520 ;
+Epoch: 30 ;	Train Loss: 0.12820059 ;	Train Accuracy: 95.529 ;	Val Loss: 0.55534776 ; 	Val Accuracy: 85.720 ;
+Epoch: 31 ;	Train Loss: 0.12647593 ;	Train Accuracy: 95.538 ;	Val Loss: 0.49264185 ; 	Val Accuracy: 86.520 ;
+Epoch: 32 ;	Train Loss: 0.11507112 ;	Train Accuracy: 95.996 ;	Val Loss: 0.41019102 ; 	Val Accuracy: 88.080 ;
+Epoch: 33 ;	Train Loss: 0.11771901 ;	Train Accuracy: 95.864 ;	Val Loss: 0.44354191 ; 	Val Accuracy: 87.180 ;
+Epoch: 34 ;	Train Loss: 0.11260546 ;	Train Accuracy: 95.964 ;	Val Loss: 0.34946675 ; 	Val Accuracy: 90.080 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 35 ;	Train Loss: 0.11061589 ;	Train Accuracy: 96.113 ;	Val Loss: 0.36978316 ; 	Val Accuracy: 89.400 ;
+Epoch: 36 ;	Train Loss: 0.10450114 ;	Train Accuracy: 96.198 ;	Val Loss: 0.35703840 ; 	Val Accuracy: 89.860 ;
+Epoch: 37 ;	Train Loss: 0.10217875 ;	Train Accuracy: 96.473 ;	Val Loss: 0.53883442 ; 	Val Accuracy: 86.600 ;
+Epoch: 38 ;	Train Loss: 0.09589374 ;	Train Accuracy: 96.660 ;	Val Loss: 0.39255027 ; 	Val Accuracy: 89.720 ;
+Epoch: 39 ;	Train Loss: 0.09617393 ;	Train Accuracy: 96.638 ;	Val Loss: 0.49173578 ; 	Val Accuracy: 87.320 ;
+Epoch: 40 ;	Train Loss: 0.09321196 ;	Train Accuracy: 96.740 ;	Val Loss: 0.43729891 ; 	Val Accuracy: 88.620 ;
+Epoch: 41 ;	Train Loss: 0.09201407 ;	Train Accuracy: 96.809 ;	Val Loss: 0.37751255 ; 	Val Accuracy: 89.600 ;
+Epoch: 42 ;	Train Loss: 0.09014981 ;	Train Accuracy: 96.844 ;	Val Loss: 0.40478069 ; 	Val Accuracy: 88.880 ;
+Epoch: 43 ;	Train Loss: 0.08685659 ;	Train Accuracy: 96.938 ;	Val Loss: 0.43705190 ; 	Val Accuracy: 88.540 ;
+Epoch: 44 ;	Train Loss: 0.08664095 ;	Train Accuracy: 96.916 ;	Val Loss: 0.57595731 ; 	Val Accuracy: 85.200 ;
+Epoch: 45 ;	Train Loss: 0.07977589 ;	Train Accuracy: 97.231 ;	Val Loss: 0.36105411 ; 	Val Accuracy: 90.260 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 46 ;	Train Loss: 0.07812470 ;	Train Accuracy: 97.276 ;	Val Loss: 0.36112491 ; 	Val Accuracy: 89.900 ;
+Epoch: 47 ;	Train Loss: 0.07776330 ;	Train Accuracy: 97.193 ;	Val Loss: 0.59342181 ; 	Val Accuracy: 86.100 ;
+Epoch: 48 ;	Train Loss: 0.08103994 ;	Train Accuracy: 97.178 ;	Val Loss: 0.56278469 ; 	Val Accuracy: 85.940 ;
+Epoch: 49 ;	Train Loss: 0.07225008 ;	Train Accuracy: 97.487 ;	Val Loss: 0.41105836 ; 	Val Accuracy: 89.460 ;
+Epoch: 50 ;	Train Loss: 0.07091484 ;	Train Accuracy: 97.542 ;	Val Loss: 0.33582044 ; 	Val Accuracy: 90.180 ;
+Epoch: 51 ;	Train Loss: 0.07350370 ;	Train Accuracy: 97.411 ;	Val Loss: 0.33268094 ; 	Val Accuracy: 90.400 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 52 ;	Train Loss: 0.06988936 ;	Train Accuracy: 97.509 ;	Val Loss: 0.60807567 ; 	Val Accuracy: 85.700 ;
+Epoch: 53 ;	Train Loss: 0.06908759 ;	Train Accuracy: 97.562 ;	Val Loss: 0.49071409 ; 	Val Accuracy: 87.700 ;
+Epoch: 54 ;	Train Loss: 0.07021551 ;	Train Accuracy: 97.473 ;	Val Loss: 0.39549974 ; 	Val Accuracy: 89.360 ;
+Epoch: 55 ;	Train Loss: 0.06600217 ;	Train Accuracy: 97.638 ;	Val Loss: 0.34760478 ; 	Val Accuracy: 90.400 ;
+Epoch: 56 ;	Train Loss: 0.06465612 ;	Train Accuracy: 97.787 ;	Val Loss: 0.50278797 ; 	Val Accuracy: 87.340 ;
+Epoch: 57 ;	Train Loss: 0.06499118 ;	Train Accuracy: 97.758 ;	Val Loss: 0.54764862 ; 	Val Accuracy: 86.640 ;
+Epoch: 58 ;	Train Loss: 0.06399238 ;	Train Accuracy: 97.776 ;	Val Loss: 0.44322395 ; 	Val Accuracy: 88.640 ;
+Epoch: 59 ;	Train Loss: 0.06360859 ;	Train Accuracy: 97.836 ;	Val Loss: 0.41639052 ; 	Val Accuracy: 88.600 ;
+Epoch: 60 ;	Train Loss: 0.05851276 ;	Train Accuracy: 98.049 ;	Val Loss: 0.35623242 ; 	Val Accuracy: 90.040 ;
+Epoch: 61 ;	Train Loss: 0.05887148 ;	Train Accuracy: 97.987 ;	Val Loss: 0.63055788 ; 	Val Accuracy: 85.260 ;
+Epoch: 62 ;	Train Loss: 0.06064618 ;	Train Accuracy: 97.887 ;	Val Loss: 0.37912265 ; 	Val Accuracy: 89.680 ;
+Epoch: 63 ;	Train Loss: 0.05918564 ;	Train Accuracy: 97.938 ;	Val Loss: 0.53059637 ; 	Val Accuracy: 87.320 ;
+Epoch: 64 ;	Train Loss: 0.05577954 ;	Train Accuracy: 98.053 ;	Val Loss: 0.44173347 ; 	Val Accuracy: 88.640 ;
+Epoch: 65 ;	Train Loss: 0.05619229 ;	Train Accuracy: 98.042 ;	Val Loss: 0.35859202 ; 	Val Accuracy: 91.180 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 66 ;	Train Loss: 0.06012809 ;	Train Accuracy: 97.896 ;	Val Loss: 0.39861610 ; 	Val Accuracy: 90.120 ;
+Epoch: 67 ;	Train Loss: 0.05548709 ;	Train Accuracy: 98.078 ;	Val Loss: 0.41979772 ; 	Val Accuracy: 89.640 ;
+Epoch: 68 ;	Train Loss: 0.05643139 ;	Train Accuracy: 97.991 ;	Val Loss: 0.41924471 ; 	Val Accuracy: 89.280 ;
+Epoch: 69 ;	Train Loss: 0.05549935 ;	Train Accuracy: 98.073 ;	Val Loss: 0.40964232 ; 	Val Accuracy: 90.380 ;
+Epoch: 70 ;	Train Loss: 0.05488616 ;	Train Accuracy: 98.098 ;	Val Loss: 0.36451679 ; 	Val Accuracy: 90.420 ;
+Epoch: 71 ;	Train Loss: 0.05867791 ;	Train Accuracy: 97.931 ;	Val Loss: 0.37637100 ; 	Val Accuracy: 89.960 ;
+Epoch: 72 ;	Train Loss: 0.05388790 ;	Train Accuracy: 98.173 ;	Val Loss: 0.38941387 ; 	Val Accuracy: 90.480 ;
+Epoch: 73 ;	Train Loss: 0.05153570 ;	Train Accuracy: 98.187 ;	Val Loss: 0.43170626 ; 	Val Accuracy: 88.580 ;
+Epoch: 74 ;	Train Loss: 0.05410188 ;	Train Accuracy: 98.122 ;	Val Loss: 0.36091873 ; 	Val Accuracy: 91.320 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 75 ;	Train Loss: 0.05234368 ;	Train Accuracy: 98.213 ;	Val Loss: 0.46948208 ; 	Val Accuracy: 88.960 ;
+Epoch: 76 ;	Train Loss: 0.05252748 ;	Train Accuracy: 98.240 ;	Val Loss: 0.39802144 ; 	Val Accuracy: 90.140 ;
+Epoch: 77 ;	Train Loss: 0.04918595 ;	Train Accuracy: 98.344 ;	Val Loss: 0.46135227 ; 	Val Accuracy: 88.520 ;
+Epoch: 78 ;	Train Loss: 0.05417463 ;	Train Accuracy: 98.167 ;	Val Loss: 0.36527961 ; 	Val Accuracy: 90.480 ;
+Epoch: 79 ;	Train Loss: 0.04801122 ;	Train Accuracy: 98.351 ;	Val Loss: 0.39217025 ; 	Val Accuracy: 90.020 ;
+Epoch: 80 ;	Train Loss: 0.04993491 ;	Train Accuracy: 98.289 ;	Val Loss: 0.38230937 ; 	Val Accuracy: 90.400 ;
+Epoch: 81 ;	Train Loss: 0.05307064 ;	Train Accuracy: 98.167 ;	Val Loss: 0.42189226 ; 	Val Accuracy: 89.800 ;
+Epoch: 82 ;	Train Loss: 0.04838839 ;	Train Accuracy: 98.351 ;	Val Loss: 0.36478385 ; 	Val Accuracy: 90.700 ;
+Epoch: 83 ;	Train Loss: 0.04818717 ;	Train Accuracy: 98.400 ;	Val Loss: 0.37800595 ; 	Val Accuracy: 89.900 ;
+Epoch: 84 ;	Train Loss: 0.05338108 ;	Train Accuracy: 98.107 ;	Val Loss: 0.35302766 ; 	Val Accuracy: 90.580 ;
+Epoch: 85 ;	Train Loss: 0.05002264 ;	Train Accuracy: 98.247 ;	Val Loss: 0.37891132 ; 	Val Accuracy: 90.520 ;
+Epoch: 86 ;	Train Loss: 0.04698632 ;	Train Accuracy: 98.436 ;	Val Loss: 0.49809615 ; 	Val Accuracy: 88.020 ;
+Epoch: 87 ;	Train Loss: 0.05138772 ;	Train Accuracy: 98.309 ;	Val Loss: 0.35533947 ; 	Val Accuracy: 90.760 ;
+Epoch: 88 ;	Train Loss: 0.04636382 ;	Train Accuracy: 98.462 ;	Val Loss: 0.36697698 ; 	Val Accuracy: 90.500 ;
+Epoch: 89 ;	Train Loss: 0.05031997 ;	Train Accuracy: 98.298 ;	Val Loss: 0.33187876 ; 	Val Accuracy: 91.160 ;
+Epoch: 90 ;	Train Loss: 0.04926947 ;	Train Accuracy: 98.240 ;	Val Loss: 0.36399743 ; 	Val Accuracy: 90.740 ;
+Epoch: 91 ;	Train Loss: 0.04823446 ;	Train Accuracy: 98.342 ;	Val Loss: 0.33972218 ; 	Val Accuracy: 91.040 ;
+Epoch: 92 ;	Train Loss: 0.04590448 ;	Train Accuracy: 98.502 ;	Val Loss: 0.34755567 ; 	Val Accuracy: 91.360 ;
+
+Saving Network State...
+
+Model state saved (AA1Test_best_state.pt)
+
+Epoch: 93 ;	Train Loss: 0.04793480 ;	Train Accuracy: 98.400 ;	Val Loss: 0.46633225 ; 	Val Accuracy: 88.200 ;
+Epoch: 94 ;	Train Loss: 0.04792640 ;	Train Accuracy: 98.387 ;	Val Loss: 0.41975036 ; 	Val Accuracy: 89.380 ;
+Epoch: 95 ;	Train Loss: 0.04890529 ;	Train Accuracy: 98.351 ;	Val Loss: 0.34964803 ; 	Val Accuracy: 91.100 ;
+Epoch: 96 ;	Train Loss: 0.04455213 ;	Train Accuracy: 98.529 ;	Val Loss: 0.44774766 ; 	Val Accuracy: 88.780 ;
+Epoch: 97 ;	Train Loss: 0.04483482 ;	Train Accuracy: 98.442 ;	Val Loss: 0.53186284 ; 	Val Accuracy: 87.180 ;
+Epoch: 98 ;	Train Loss: 0.04483362 ;	Train Accuracy: 98.518 ;	Val Loss: 0.37097897 ; 	Val Accuracy: 90.840 ;
+Epoch: 99 ;	Train Loss: 0.04583471 ;	Train Accuracy: 98.431 ;	Val Loss: 0.44415559 ; 	Val Accuracy: 89.200 ;
+Epoch: 100 ;	Train Loss: 0.04773455 ;	Train Accuracy: 98.389 ;	Val Loss: 0.43758302 ; 	Val Accuracy: 89.200 ;
+
+Epochs: 100 ;	Test Loss: 0.43642886 ; 	Test Accuracy: 89.150 ;
+
+
+Best Accuracy: 91.360
+
+
+Saving Error Plot...
+
+Error Plot saved (AA1Test_error_plot.png)
+

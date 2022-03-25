@@ -1,0 +1,64 @@
+Namespace(data_path='CIFAR10/', train_batch_size=128, test_batch_size=100, epochs=50, optimizer='adagrad', learning_rate=0.1, momentum=0.9, weight_decay=0.0005, save=False, print_summary=False, no_training=False)
+
+Running on  CUDA 
+
+Files already downloaded and verified
+Files already downloaded and verified
+
+
+Printing Model Summary...
+
+
+Training...
+
+
+Epoch: 1 ;	Train Loss: 2.00965816 ;	Train Accuracy: 28.122 ;	Test Loss: 1.92227291 ;	Test Accuracy: 29.750 ;
+Epoch: 2 ;	Train Loss: 1.55954243 ;	Train Accuracy: 41.852 ;	Test Loss: 1.65913276 ;	Test Accuracy: 39.320 ;
+Epoch: 3 ;	Train Loss: 1.27567406 ;	Train Accuracy: 53.494 ;	Test Loss: 1.38538058 ;	Test Accuracy: 53.400 ;
+Epoch: 4 ;	Train Loss: 1.06140985 ;	Train Accuracy: 62.008 ;	Test Loss: 1.16397891 ;	Test Accuracy: 59.430 ;
+Epoch: 5 ;	Train Loss: 0.93669467 ;	Train Accuracy: 66.790 ;	Test Loss: 1.21637880 ;	Test Accuracy: 58.980 ;
+Epoch: 6 ;	Train Loss: 0.83755471 ;	Train Accuracy: 70.622 ;	Test Loss: 0.99192644 ;	Test Accuracy: 65.700 ;
+Epoch: 7 ;	Train Loss: 0.75855869 ;	Train Accuracy: 73.300 ;	Test Loss: 0.85638330 ;	Test Accuracy: 71.610 ;
+Epoch: 8 ;	Train Loss: 0.69675409 ;	Train Accuracy: 75.618 ;	Test Loss: 0.83209831 ;	Test Accuracy: 72.400 ;
+Epoch: 9 ;	Train Loss: 0.64608966 ;	Train Accuracy: 77.648 ;	Test Loss: 1.05507709 ;	Test Accuracy: 66.490 ;
+Epoch: 10 ;	Train Loss: 0.61080672 ;	Train Accuracy: 78.892 ;	Test Loss: 0.95561922 ;	Test Accuracy: 68.800 ;
+Epoch: 11 ;	Train Loss: 0.58078671 ;	Train Accuracy: 79.798 ;	Test Loss: 0.77983984 ;	Test Accuracy: 73.640 ;
+Epoch: 12 ;	Train Loss: 0.55050983 ;	Train Accuracy: 80.808 ;	Test Loss: 0.73154547 ;	Test Accuracy: 75.040 ;
+Epoch: 13 ;	Train Loss: 0.53098481 ;	Train Accuracy: 81.604 ;	Test Loss: 0.61009584 ;	Test Accuracy: 78.920 ;
+Epoch: 14 ;	Train Loss: 0.51465499 ;	Train Accuracy: 82.266 ;	Test Loss: 0.92842788 ;	Test Accuracy: 71.860 ;
+Epoch: 15 ;	Train Loss: 0.49764394 ;	Train Accuracy: 82.856 ;	Test Loss: 0.64571034 ;	Test Accuracy: 78.440 ;
+Epoch: 16 ;	Train Loss: 0.48702563 ;	Train Accuracy: 83.160 ;	Test Loss: 0.58458185 ;	Test Accuracy: 80.270 ;
+Epoch: 17 ;	Train Loss: 0.47453024 ;	Train Accuracy: 83.706 ;	Test Loss: 0.60165983 ;	Test Accuracy: 79.580 ;
+Epoch: 18 ;	Train Loss: 0.46185516 ;	Train Accuracy: 84.110 ;	Test Loss: 0.97354198 ;	Test Accuracy: 72.890 ;
+Epoch: 19 ;	Train Loss: 0.45001902 ;	Train Accuracy: 84.656 ;	Test Loss: 0.52776572 ;	Test Accuracy: 82.210 ;
+Epoch: 20 ;	Train Loss: 0.43768219 ;	Train Accuracy: 84.852 ;	Test Loss: 0.63241629 ;	Test Accuracy: 79.170 ;
+Epoch: 21 ;	Train Loss: 0.42990135 ;	Train Accuracy: 85.102 ;	Test Loss: 0.59524516 ;	Test Accuracy: 80.720 ;
+Epoch: 22 ;	Train Loss: 0.42442548 ;	Train Accuracy: 85.378 ;	Test Loss: 0.71773001 ;	Test Accuracy: 78.210 ;
+Epoch: 23 ;	Train Loss: 0.41233292 ;	Train Accuracy: 85.876 ;	Test Loss: 0.56154662 ;	Test Accuracy: 81.660 ;
+Epoch: 24 ;	Train Loss: 0.40733862 ;	Train Accuracy: 86.090 ;	Test Loss: 0.57249769 ;	Test Accuracy: 81.070 ;
+Epoch: 25 ;	Train Loss: 0.39932878 ;	Train Accuracy: 86.436 ;	Test Loss: 0.51307482 ;	Test Accuracy: 83.100 ;
+Epoch: 26 ;	Train Loss: 0.39427251 ;	Train Accuracy: 86.486 ;	Test Loss: 0.66190439 ;	Test Accuracy: 78.560 ;
+Epoch: 27 ;	Train Loss: 0.38568538 ;	Train Accuracy: 86.676 ;	Test Loss: 0.48413250 ;	Test Accuracy: 83.970 ;
+Epoch: 28 ;	Train Loss: 0.38241957 ;	Train Accuracy: 86.916 ;	Test Loss: 0.65411776 ;	Test Accuracy: 79.200 ;
+Epoch: 29 ;	Train Loss: 0.37587608 ;	Train Accuracy: 87.098 ;	Test Loss: 0.48554785 ;	Test Accuracy: 83.780 ;
+Epoch: 30 ;	Train Loss: 0.36893517 ;	Train Accuracy: 87.236 ;	Test Loss: 0.51437170 ;	Test Accuracy: 82.780 ;
+Epoch: 31 ;	Train Loss: 0.36294938 ;	Train Accuracy: 87.480 ;	Test Loss: 0.51333291 ;	Test Accuracy: 83.170 ;
+Epoch: 32 ;	Train Loss: 0.36025185 ;	Train Accuracy: 87.632 ;	Test Loss: 0.50104838 ;	Test Accuracy: 83.710 ;
+Epoch: 33 ;	Train Loss: 0.35670337 ;	Train Accuracy: 87.654 ;	Test Loss: 0.51533558 ;	Test Accuracy: 83.210 ;
+Epoch: 34 ;	Train Loss: 0.34872910 ;	Train Accuracy: 88.024 ;	Test Loss: 0.45041480 ;	Test Accuracy: 85.380 ;
+Epoch: 35 ;	Train Loss: 0.34936002 ;	Train Accuracy: 87.982 ;	Test Loss: 0.52013516 ;	Test Accuracy: 83.260 ;
+Epoch: 36 ;	Train Loss: 0.34489201 ;	Train Accuracy: 88.136 ;	Test Loss: 0.51515646 ;	Test Accuracy: 83.460 ;
+Epoch: 37 ;	Train Loss: 0.33682909 ;	Train Accuracy: 88.546 ;	Test Loss: 0.49291646 ;	Test Accuracy: 83.710 ;
+Epoch: 38 ;	Train Loss: 0.33519717 ;	Train Accuracy: 88.356 ;	Test Loss: 0.59717179 ;	Test Accuracy: 81.420 ;
+Epoch: 39 ;	Train Loss: 0.33134106 ;	Train Accuracy: 88.688 ;	Test Loss: 0.44402328 ;	Test Accuracy: 85.640 ;
+Epoch: 40 ;	Train Loss: 0.32686425 ;	Train Accuracy: 88.628 ;	Test Loss: 0.44122641 ;	Test Accuracy: 86.040 ;
+Epoch: 41 ;	Train Loss: 0.32550414 ;	Train Accuracy: 88.702 ;	Test Loss: 0.49410081 ;	Test Accuracy: 83.780 ;
+Epoch: 42 ;	Train Loss: 0.31956188 ;	Train Accuracy: 88.922 ;	Test Loss: 0.42564109 ;	Test Accuracy: 85.810 ;
+Epoch: 43 ;	Train Loss: 0.31613676 ;	Train Accuracy: 89.022 ;	Test Loss: 0.44192691 ;	Test Accuracy: 85.660 ;
+Epoch: 44 ;	Train Loss: 0.31567582 ;	Train Accuracy: 89.098 ;	Test Loss: 0.49490896 ;	Test Accuracy: 84.360 ;
+Epoch: 45 ;	Train Loss: 0.30789528 ;	Train Accuracy: 89.436 ;	Test Loss: 0.43676007 ;	Test Accuracy: 85.750 ;
+Epoch: 46 ;	Train Loss: 0.31054397 ;	Train Accuracy: 89.234 ;	Test Loss: 0.44511843 ;	Test Accuracy: 85.770 ;
+Epoch: 47 ;	Train Loss: 0.30447548 ;	Train Accuracy: 89.502 ;	Test Loss: 0.48766680 ;	Test Accuracy: 84.370 ;
+Epoch: 48 ;	Train Loss: 0.30372685 ;	Train Accuracy: 89.494 ;	Test Loss: 0.45098801 ;	Test Accuracy: 85.190 ;
+Epoch: 49 ;	Train Loss: 0.29769812 ;	Train Accuracy: 89.748 ;	Test Loss: 0.43072484 ;	Test Accuracy: 86.050 ;
+Epoch: 50 ;	Train Loss: 0.29986785 ;	Train Accuracy: 89.602 ;	Test Loss: 0.46653987 ;	Test Accuracy: 85.000 ;

@@ -1,0 +1,157 @@
+Namespace(data_path='CIFAR10/', train_batch_size=128, test_batch_size=100, epochs=50, optimizer='sgd', learning_rate=0.1, momentum=0.9, weight_decay=0.0005, save=False, print_summary=True, no_training=False)
+
+Running on  CUDA 
+
+Files already downloaded and verified
+Files already downloaded and verified
+
+
+Printing Model Summary...
+
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (linear): Linear(in_features=512, out_features=10, bias=True)
+)
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 32, 32]           1,728
+       BatchNorm2d-2           [-1, 64, 32, 32]             128
+            Conv2d-3           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-4           [-1, 64, 32, 32]             128
+            Conv2d-5           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-6           [-1, 64, 32, 32]             128
+        BasicBlock-7           [-1, 64, 32, 32]               0
+            Conv2d-8          [-1, 128, 16, 16]          73,728
+       BatchNorm2d-9          [-1, 128, 16, 16]             256
+           Conv2d-10          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-11          [-1, 128, 16, 16]             256
+           Conv2d-12          [-1, 128, 16, 16]           8,192
+      BatchNorm2d-13          [-1, 128, 16, 16]             256
+       BasicBlock-14          [-1, 128, 16, 16]               0
+           Conv2d-15            [-1, 256, 8, 8]         294,912
+      BatchNorm2d-16            [-1, 256, 8, 8]             512
+           Conv2d-17            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-18            [-1, 256, 8, 8]             512
+           Conv2d-19            [-1, 256, 8, 8]          32,768
+      BatchNorm2d-20            [-1, 256, 8, 8]             512
+       BasicBlock-21            [-1, 256, 8, 8]               0
+           Conv2d-22            [-1, 512, 4, 4]       1,179,648
+      BatchNorm2d-23            [-1, 512, 4, 4]           1,024
+           Conv2d-24            [-1, 512, 4, 4]       2,359,296
+      BatchNorm2d-25            [-1, 512, 4, 4]           1,024
+           Conv2d-26            [-1, 512, 4, 4]         131,072
+      BatchNorm2d-27            [-1, 512, 4, 4]           1,024
+       BasicBlock-28            [-1, 512, 4, 4]               0
+           Linear-29                   [-1, 10]           5,130
+================================================================
+Total params: 4,903,242
+Trainable params: 4,903,242
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 6.56
+Params size (MB): 18.70
+Estimated Total Size (MB): 25.28
+----------------------------------------------------------------
+
+
+Training...
+
+
+Epoch: 1 ;	Train Loss: 1.60600352 ;	Train Accuracy: 40.770 ;	Test Loss: 1.33246875 ;	Test Accuracy: 52.280 ;
+Epoch: 2 ;	Train Loss: 1.12871672 ;	Train Accuracy: 59.584 ;	Test Loss: 1.06044262 ;	Test Accuracy: 63.180 ;
+Epoch: 3 ;	Train Loss: 0.89690333 ;	Train Accuracy: 68.076 ;	Test Loss: 0.91304099 ;	Test Accuracy: 68.170 ;
+Epoch: 4 ;	Train Loss: 0.73857107 ;	Train Accuracy: 74.036 ;	Test Loss: 0.77758201 ;	Test Accuracy: 73.180 ;
+Epoch: 5 ;	Train Loss: 0.64601714 ;	Train Accuracy: 77.548 ;	Test Loss: 0.69801252 ;	Test Accuracy: 76.210 ;
+Epoch: 6 ;	Train Loss: 0.58317267 ;	Train Accuracy: 79.716 ;	Test Loss: 0.68080973 ;	Test Accuracy: 75.590 ;
+Epoch: 7 ;	Train Loss: 0.54706476 ;	Train Accuracy: 81.018 ;	Test Loss: 0.61907863 ;	Test Accuracy: 79.420 ;
+Epoch: 8 ;	Train Loss: 0.51928663 ;	Train Accuracy: 82.138 ;	Test Loss: 0.81336406 ;	Test Accuracy: 73.890 ;
+Epoch: 9 ;	Train Loss: 0.50349730 ;	Train Accuracy: 82.650 ;	Test Loss: 0.73279268 ;	Test Accuracy: 77.320 ;
+Epoch: 10 ;	Train Loss: 0.48528704 ;	Train Accuracy: 83.314 ;	Test Loss: 0.82213039 ;	Test Accuracy: 74.770 ;
+Epoch: 11 ;	Train Loss: 0.46523602 ;	Train Accuracy: 83.860 ;	Test Loss: 0.55530294 ;	Test Accuracy: 81.220 ;
+Epoch: 12 ;	Train Loss: 0.44560284 ;	Train Accuracy: 84.668 ;	Test Loss: 0.62372258 ;	Test Accuracy: 78.540 ;
+Epoch: 13 ;	Train Loss: 0.43841872 ;	Train Accuracy: 84.820 ;	Test Loss: 0.55044805 ;	Test Accuracy: 82.010 ;
+Epoch: 14 ;	Train Loss: 0.43273679 ;	Train Accuracy: 84.974 ;	Test Loss: 0.52030004 ;	Test Accuracy: 82.620 ;
+Epoch: 15 ;	Train Loss: 0.42429666 ;	Train Accuracy: 85.240 ;	Test Loss: 0.53823905 ;	Test Accuracy: 81.910 ;
+Epoch: 16 ;	Train Loss: 0.41246389 ;	Train Accuracy: 85.878 ;	Test Loss: 0.60809961 ;	Test Accuracy: 80.150 ;
+Epoch: 17 ;	Train Loss: 0.41277146 ;	Train Accuracy: 85.844 ;	Test Loss: 0.73589982 ;	Test Accuracy: 77.030 ;
+Epoch: 18 ;	Train Loss: 0.40732149 ;	Train Accuracy: 85.946 ;	Test Loss: 0.68331816 ;	Test Accuracy: 77.890 ;
+Epoch: 19 ;	Train Loss: 0.40488258 ;	Train Accuracy: 86.306 ;	Test Loss: 0.70598375 ;	Test Accuracy: 78.080 ;
+Epoch: 20 ;	Train Loss: 0.39135571 ;	Train Accuracy: 86.666 ;	Test Loss: 0.63479111 ;	Test Accuracy: 79.910 ;
+Epoch: 21 ;	Train Loss: 0.39073865 ;	Train Accuracy: 86.550 ;	Test Loss: 0.54122369 ;	Test Accuracy: 82.690 ;
+Epoch: 22 ;	Train Loss: 0.39043760 ;	Train Accuracy: 86.622 ;	Test Loss: 0.61315131 ;	Test Accuracy: 79.760 ;
+Epoch: 23 ;	Train Loss: 0.39096651 ;	Train Accuracy: 86.678 ;	Test Loss: 0.80938336 ;	Test Accuracy: 74.920 ;
+Epoch: 24 ;	Train Loss: 0.37375408 ;	Train Accuracy: 87.192 ;	Test Loss: 0.71991007 ;	Test Accuracy: 78.260 ;
+Epoch: 25 ;	Train Loss: 0.38306639 ;	Train Accuracy: 86.750 ;	Test Loss: 0.58623283 ;	Test Accuracy: 80.880 ;
+Epoch: 26 ;	Train Loss: 0.37573190 ;	Train Accuracy: 86.958 ;	Test Loss: 0.54603673 ;	Test Accuracy: 81.710 ;
+Epoch: 27 ;	Train Loss: 0.37516761 ;	Train Accuracy: 87.114 ;	Test Loss: 0.51492438 ;	Test Accuracy: 83.270 ;
+Epoch: 28 ;	Train Loss: 0.37831200 ;	Train Accuracy: 86.958 ;	Test Loss: 0.45210468 ;	Test Accuracy: 84.830 ;
+Epoch: 29 ;	Train Loss: 0.36957470 ;	Train Accuracy: 87.270 ;	Test Loss: 0.56139541 ;	Test Accuracy: 81.210 ;
+Epoch: 30 ;	Train Loss: 0.36929872 ;	Train Accuracy: 87.278 ;	Test Loss: 0.59655484 ;	Test Accuracy: 80.920 ;
+Epoch: 31 ;	Train Loss: 0.36530151 ;	Train Accuracy: 87.274 ;	Test Loss: 0.60579758 ;	Test Accuracy: 80.970 ;
+Epoch: 32 ;	Train Loss: 0.36561386 ;	Train Accuracy: 87.404 ;	Test Loss: 0.71530118 ;	Test Accuracy: 78.100 ;
+Epoch: 33 ;	Train Loss: 0.35921593 ;	Train Accuracy: 87.654 ;	Test Loss: 0.54936772 ;	Test Accuracy: 81.570 ;
+Epoch: 34 ;	Train Loss: 0.36182478 ;	Train Accuracy: 87.574 ;	Test Loss: 0.62981961 ;	Test Accuracy: 79.500 ;
+Epoch: 35 ;	Train Loss: 0.35990895 ;	Train Accuracy: 87.570 ;	Test Loss: 0.43522504 ;	Test Accuracy: 85.440 ;
+Epoch: 36 ;	Train Loss: 0.35881326 ;	Train Accuracy: 87.706 ;	Test Loss: 0.46939819 ;	Test Accuracy: 84.440 ;
+Epoch: 37 ;	Train Loss: 0.35964024 ;	Train Accuracy: 87.778 ;	Test Loss: 0.57158370 ;	Test Accuracy: 80.980 ;
+Epoch: 38 ;	Train Loss: 0.36320165 ;	Train Accuracy: 87.752 ;	Test Loss: 0.48030682 ;	Test Accuracy: 83.600 ;
+Epoch: 39 ;	Train Loss: 0.35359198 ;	Train Accuracy: 87.870 ;	Test Loss: 0.48497396 ;	Test Accuracy: 84.250 ;
+Epoch: 40 ;	Train Loss: 0.35838315 ;	Train Accuracy: 87.604 ;	Test Loss: 0.66258748 ;	Test Accuracy: 79.680 ;
+Epoch: 41 ;	Train Loss: 0.35181903 ;	Train Accuracy: 87.966 ;	Test Loss: 0.52973324 ;	Test Accuracy: 82.600 ;
+Epoch: 42 ;	Train Loss: 0.35430345 ;	Train Accuracy: 87.900 ;	Test Loss: 0.41571216 ;	Test Accuracy: 86.120 ;
+Epoch: 43 ;	Train Loss: 0.35227755 ;	Train Accuracy: 87.852 ;	Test Loss: 0.47996844 ;	Test Accuracy: 83.680 ;
+Epoch: 44 ;	Train Loss: 0.35205489 ;	Train Accuracy: 87.904 ;	Test Loss: 0.49899230 ;	Test Accuracy: 83.990 ;
+Epoch: 45 ;	Train Loss: 0.35211354 ;	Train Accuracy: 87.870 ;	Test Loss: 0.57021927 ;	Test Accuracy: 80.830 ;
+Epoch: 46 ;	Train Loss: 0.34518720 ;	Train Accuracy: 88.140 ;	Test Loss: 0.58931271 ;	Test Accuracy: 80.650 ;
+Epoch: 47 ;	Train Loss: 0.34532072 ;	Train Accuracy: 88.002 ;	Test Loss: 0.47948143 ;	Test Accuracy: 83.990 ;
+Epoch: 48 ;	Train Loss: 0.35118602 ;	Train Accuracy: 87.912 ;	Test Loss: 0.68463542 ;	Test Accuracy: 79.310 ;
+Epoch: 49 ;	Train Loss: 0.34678981 ;	Train Accuracy: 88.148 ;	Test Loss: 0.86490718 ;	Test Accuracy: 74.210 ;
+Epoch: 50 ;	Train Loss: 0.34606956 ;	Train Accuracy: 88.122 ;	Test Loss: 0.45972643 ;	Test Accuracy: 85.280 ;

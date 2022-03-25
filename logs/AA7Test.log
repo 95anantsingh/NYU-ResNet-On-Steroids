@@ -1,0 +1,590 @@
+
+
+Run Config: 
+------------------------------
+data_path          : CIFAR10/
+train_batch_size   : 128
+val_batch_size     : 256
+test_batch_size    : 256
+epochs             : 200
+test_transform     : TestTransform_1
+train_transform    : TrainTransform_1
+resume             : None
+model              : ResNet24_1
+optimizer          : sgd
+learning_rate      : 0.1
+momentum           : 0.9
+weight_decay       : 0.0005
+mixup              : True
+schedule           : True
+anneal             : True
+validate           : True
+save               : True
+print_summary      : False
+no_training        : False
+save_plot          : True
+plot_transforms    : False
+output_file_prefix : AA7Test
+
+Running on  CUDA 
+
+Number of GPUs: 1 
+
+Cuda Capability: (7, 5)
+Files already downloaded and verified
+Files already downloaded and verified
+
+
+Model Config: 
+-------------------------------------
+N (# Layers)	: 4 
+B (# Blocks)	: [3, 3, 2, 3] 
+C (# Channels)	: [64, 128, 128, 256] 
+F (Conv Kernel)	: [3, 3, 3, 3] 
+K (Skip Kernel)	: [1, 1, 1, 1] 
+P (Pool Kernel)	: 4
+
+Training...
+
+
+Epoch: 1 ;  Train Loss: 2.19735977 ;  Train Accuracy: 17.636 ;  Val Loss: 1.78053389 ;  Val Accuracy: 35.020 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 2 ;  Train Loss: 1.93075945 ;  Train Accuracy: 25.060 ;  Val Loss: 1.73287478 ;  Val Accuracy: 37.420 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 3 ;  Train Loss: 1.80731584 ;  Train Accuracy: 27.293 ;  Val Loss: 1.46499252 ;  Val Accuracy: 48.440 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 4 ;  Train Loss: 1.75355715 ;  Train Accuracy: 31.238 ;  Val Loss: 1.44854745 ;  Val Accuracy: 48.640 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 5 ;  Train Loss: 1.65653355 ;  Train Accuracy: 34.813 ;  Val Loss: 1.17070869 ;  Val Accuracy: 60.380 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 6 ;  Train Loss: 1.55006181 ;  Train Accuracy: 36.191 ;  Val Loss: 1.24185427 ;  Val Accuracy: 58.240 ;
+Epoch: 7 ;  Train Loss: 1.47562690 ;  Train Accuracy: 39.262 ;  Val Loss: 1.00879352 ;  Val Accuracy: 67.400 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 8 ;  Train Loss: 1.43078916 ;  Train Accuracy: 41.464 ;  Val Loss: 0.96805329 ;  Val Accuracy: 69.720 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 9 ;  Train Loss: 1.39445234 ;  Train Accuracy: 41.498 ;  Val Loss: 0.84106693 ;  Val Accuracy: 75.340 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 10 ;  Train Loss: 1.40608986 ;  Train Accuracy: 39.916 ;  Val Loss: 0.89475650 ;  Val Accuracy: 71.000 ;
+Epoch: 11 ;  Train Loss: 1.35711769 ;  Train Accuracy: 42.769 ;  Val Loss: 0.93630039 ;  Val Accuracy: 70.400 ;
+Epoch: 12 ;  Train Loss: 1.31860786 ;  Train Accuracy: 43.291 ;  Val Loss: 0.80713905 ;  Val Accuracy: 75.380 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 13 ;  Train Loss: 1.28015005 ;  Train Accuracy: 46.653 ;  Val Loss: 0.91636119 ;  Val Accuracy: 70.600 ;
+Epoch: 14 ;  Train Loss: 1.32871887 ;  Train Accuracy: 46.420 ;  Val Loss: 0.95056808 ;  Val Accuracy: 71.220 ;
+Epoch: 15 ;  Train Loss: 1.27943137 ;  Train Accuracy: 43.289 ;  Val Loss: 0.83124251 ;  Val Accuracy: 74.400 ;
+Epoch: 16 ;  Train Loss: 1.26099466 ;  Train Accuracy: 44.004 ;  Val Loss: 0.70534223 ;  Val Accuracy: 78.620 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 17 ;  Train Loss: 1.27237154 ;  Train Accuracy: 45.493 ;  Val Loss: 0.78031529 ;  Val Accuracy: 76.960 ;
+Epoch: 18 ;  Train Loss: 1.23504530 ;  Train Accuracy: 46.127 ;  Val Loss: 0.75606442 ;  Val Accuracy: 77.800 ;
+Epoch: 19 ;  Train Loss: 1.25782408 ;  Train Accuracy: 44.322 ;  Val Loss: 0.77658696 ;  Val Accuracy: 76.720 ;
+Epoch: 20 ;  Train Loss: 1.23551171 ;  Train Accuracy: 46.047 ;  Val Loss: 0.76255273 ;  Val Accuracy: 77.500 ;
+Epoch: 21 ;  Train Loss: 1.22296382 ;  Train Accuracy: 47.184 ;  Val Loss: 0.71926591 ;  Val Accuracy: 79.120 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 22 ;  Train Loss: 1.25512416 ;  Train Accuracy: 44.204 ;  Val Loss: 0.75698267 ;  Val Accuracy: 78.660 ;
+Epoch: 23 ;  Train Loss: 1.24662382 ;  Train Accuracy: 44.196 ;  Val Loss: 0.82074379 ;  Val Accuracy: 75.700 ;
+Epoch: 24 ;  Train Loss: 1.27397582 ;  Train Accuracy: 45.807 ;  Val Loss: 0.65192324 ;  Val Accuracy: 82.420 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 25 ;  Train Loss: 1.21389793 ;  Train Accuracy: 46.049 ;  Val Loss: 0.73300022 ;  Val Accuracy: 78.260 ;
+Epoch: 26 ;  Train Loss: 1.21731853 ;  Train Accuracy: 46.238 ;  Val Loss: 0.66094089 ;  Val Accuracy: 81.600 ;
+Epoch: 27 ;  Train Loss: 1.21509100 ;  Train Accuracy: 44.618 ;  Val Loss: 0.70169290 ;  Val Accuracy: 80.460 ;
+Epoch: 28 ;  Train Loss: 1.21490985 ;  Train Accuracy: 45.889 ;  Val Loss: 0.66549607 ;  Val Accuracy: 81.800 ;
+Epoch: 29 ;  Train Loss: 1.19681033 ;  Train Accuracy: 45.553 ;  Val Loss: 0.63248892 ;  Val Accuracy: 81.380 ;
+Epoch: 30 ;  Train Loss: 1.18752428 ;  Train Accuracy: 46.060 ;  Val Loss: 0.84424088 ;  Val Accuracy: 75.540 ;
+Epoch: 31 ;  Train Loss: 1.22489157 ;  Train Accuracy: 45.524 ;  Val Loss: 0.84373221 ;  Val Accuracy: 76.440 ;
+Epoch: 32 ;  Train Loss: 1.19130818 ;  Train Accuracy: 46.920 ;  Val Loss: 0.72420976 ;  Val Accuracy: 78.320 ;
+Epoch: 33 ;  Train Loss: 1.21932163 ;  Train Accuracy: 48.651 ;  Val Loss: 0.62033715 ;  Val Accuracy: 83.260 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 34 ;  Train Loss: 1.20826388 ;  Train Accuracy: 46.447 ;  Val Loss: 0.63408383 ;  Val Accuracy: 83.980 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 35 ;  Train Loss: 1.20711110 ;  Train Accuracy: 48.109 ;  Val Loss: 0.72087237 ;  Val Accuracy: 78.620 ;
+Epoch: 36 ;  Train Loss: 1.20977058 ;  Train Accuracy: 46.533 ;  Val Loss: 0.71723771 ;  Val Accuracy: 79.720 ;
+Epoch: 37 ;  Train Loss: 1.22001080 ;  Train Accuracy: 46.707 ;  Val Loss: 0.69713929 ;  Val Accuracy: 79.800 ;
+Epoch: 38 ;  Train Loss: 1.16994801 ;  Train Accuracy: 46.651 ;  Val Loss: 0.72593603 ;  Val Accuracy: 78.640 ;
+Epoch: 39 ;  Train Loss: 1.17595578 ;  Train Accuracy: 50.856 ;  Val Loss: 0.76576791 ;  Val Accuracy: 78.440 ;
+Epoch: 40 ;  Train Loss: 1.20221547 ;  Train Accuracy: 45.740 ;  Val Loss: 0.67048613 ;  Val Accuracy: 82.260 ;
+Epoch: 41 ;  Train Loss: 1.19904636 ;  Train Accuracy: 45.467 ;  Val Loss: 0.62468916 ;  Val Accuracy: 83.500 ;
+Epoch: 42 ;  Train Loss: 1.17375843 ;  Train Accuracy: 47.387 ;  Val Loss: 0.71915005 ;  Val Accuracy: 79.720 ;
+Epoch: 43 ;  Train Loss: 1.20089000 ;  Train Accuracy: 46.264 ;  Val Loss: 0.64267135 ;  Val Accuracy: 82.740 ;
+Epoch: 44 ;  Train Loss: 1.18562642 ;  Train Accuracy: 46.958 ;  Val Loss: 0.68475049 ;  Val Accuracy: 81.100 ;
+Epoch: 45 ;  Train Loss: 1.18570900 ;  Train Accuracy: 46.411 ;  Val Loss: 0.68264483 ;  Val Accuracy: 80.300 ;
+Epoch: 46 ;  Train Loss: 1.18958923 ;  Train Accuracy: 47.324 ;  Val Loss: 0.68426145 ;  Val Accuracy: 82.120 ;
+Epoch: 47 ;  Train Loss: 1.18547086 ;  Train Accuracy: 45.398 ;  Val Loss: 0.51698661 ;  Val Accuracy: 86.060 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 48 ;  Train Loss: 1.18682243 ;  Train Accuracy: 48.220 ;  Val Loss: 0.58984154 ;  Val Accuracy: 84.040 ;
+Epoch: 49 ;  Train Loss: 1.17571760 ;  Train Accuracy: 46.858 ;  Val Loss: 0.80714476 ;  Val Accuracy: 75.340 ;
+Epoch: 50 ;  Train Loss: 1.20580593 ;  Train Accuracy: 46.749 ;  Val Loss: 0.68707640 ;  Val Accuracy: 82.020 ;
+Epoch: 51 ;  Train Loss: 1.15285935 ;  Train Accuracy: 47.529 ;  Val Loss: 0.75140801 ;  Val Accuracy: 78.700 ;
+Epoch: 52 ;  Train Loss: 1.16314835 ;  Train Accuracy: 47.071 ;  Val Loss: 0.69242326 ;  Val Accuracy: 80.620 ;
+Epoch: 53 ;  Train Loss: 1.17890637 ;  Train Accuracy: 46.418 ;  Val Loss: 0.75776367 ;  Val Accuracy: 77.420 ;
+Epoch: 54 ;  Train Loss: 1.15365826 ;  Train Accuracy: 48.120 ;  Val Loss: 0.58689187 ;  Val Accuracy: 82.100 ;
+Epoch: 55 ;  Train Loss: 1.17558875 ;  Train Accuracy: 48.402 ;  Val Loss: 0.62929016 ;  Val Accuracy: 83.140 ;
+Epoch: 56 ;  Train Loss: 1.17879306 ;  Train Accuracy: 48.593 ;  Val Loss: 0.60761178 ;  Val Accuracy: 83.760 ;
+Epoch: 57 ;  Train Loss: 1.19083238 ;  Train Accuracy: 47.869 ;  Val Loss: 0.66062101 ;  Val Accuracy: 83.840 ;
+Epoch: 58 ;  Train Loss: 1.18982891 ;  Train Accuracy: 47.493 ;  Val Loss: 0.77359401 ;  Val Accuracy: 76.040 ;
+Epoch: 59 ;  Train Loss: 1.17058557 ;  Train Accuracy: 47.133 ;  Val Loss: 0.79019212 ;  Val Accuracy: 79.000 ;
+Epoch: 60 ;  Train Loss: 1.17950320 ;  Train Accuracy: 49.360 ;  Val Loss: 0.68092520 ;  Val Accuracy: 81.320 ;
+Epoch: 61 ;  Train Loss: 1.18392587 ;  Train Accuracy: 48.044 ;  Val Loss: 0.60820129 ;  Val Accuracy: 84.380 ;
+Epoch: 62 ;  Train Loss: 1.17830689 ;  Train Accuracy: 47.184 ;  Val Loss: 0.62722804 ;  Val Accuracy: 82.700 ;
+Epoch: 63 ;  Train Loss: 1.17348155 ;  Train Accuracy: 49.638 ;  Val Loss: 0.62238477 ;  Val Accuracy: 82.340 ;
+Epoch: 64 ;  Train Loss: 1.21437540 ;  Train Accuracy: 45.589 ;  Val Loss: 0.61818931 ;  Val Accuracy: 82.260 ;
+Epoch: 65 ;  Train Loss: 1.13522833 ;  Train Accuracy: 46.173 ;  Val Loss: 0.73744465 ;  Val Accuracy: 78.520 ;
+Epoch: 66 ;  Train Loss: 1.18824436 ;  Train Accuracy: 49.673 ;  Val Loss: 0.65464288 ;  Val Accuracy: 83.720 ;
+Epoch: 67 ;  Train Loss: 1.17007506 ;  Train Accuracy: 44.480 ;  Val Loss: 0.65849096 ;  Val Accuracy: 81.060 ;
+Epoch: 68 ;  Train Loss: 1.18089811 ;  Train Accuracy: 45.551 ;  Val Loss: 0.54876824 ;  Val Accuracy: 85.120 ;
+Epoch: 69 ;  Train Loss: 1.15986635 ;  Train Accuracy: 44.156 ;  Val Loss: 0.63236326 ;  Val Accuracy: 81.060 ;
+Epoch: 70 ;  Train Loss: 1.15126313 ;  Train Accuracy: 48.138 ;  Val Loss: 0.58379479 ;  Val Accuracy: 84.460 ;
+Epoch: 71 ;  Train Loss: 1.13287225 ;  Train Accuracy: 44.573 ;  Val Loss: 0.73766649 ;  Val Accuracy: 78.080 ;
+Epoch: 72 ;  Train Loss: 1.15639858 ;  Train Accuracy: 47.480 ;  Val Loss: 0.66795622 ;  Val Accuracy: 81.400 ;
+Epoch: 73 ;  Train Loss: 1.15596577 ;  Train Accuracy: 48.913 ;  Val Loss: 0.69999042 ;  Val Accuracy: 80.320 ;
+Epoch: 74 ;  Train Loss: 1.17662780 ;  Train Accuracy: 48.256 ;  Val Loss: 0.61240986 ;  Val Accuracy: 82.720 ;
+Epoch: 75 ;  Train Loss: 1.17309778 ;  Train Accuracy: 46.482 ;  Val Loss: 0.68760762 ;  Val Accuracy: 80.060 ;
+Epoch: 76 ;  Train Loss: 1.15704888 ;  Train Accuracy: 48.529 ;  Val Loss: 0.66311327 ;  Val Accuracy: 81.640 ;
+Epoch: 77 ;  Train Loss: 1.18037957 ;  Train Accuracy: 46.847 ;  Val Loss: 0.59753523 ;  Val Accuracy: 84.300 ;
+Epoch: 78 ;  Train Loss: 1.15768036 ;  Train Accuracy: 47.489 ;  Val Loss: 0.62393868 ;  Val Accuracy: 81.000 ;
+Epoch: 79 ;  Train Loss: 1.16788454 ;  Train Accuracy: 49.904 ;  Val Loss: 0.74775127 ;  Val Accuracy: 76.900 ;
+Epoch: 80 ;  Train Loss: 1.17807253 ;  Train Accuracy: 49.773 ;  Val Loss: 0.64397641 ;  Val Accuracy: 83.180 ;
+Epoch: 81 ;  Train Loss: 1.15116727 ;  Train Accuracy: 46.473 ;  Val Loss: 0.57671014 ;  Val Accuracy: 85.100 ;
+Epoch: 82 ;  Train Loss: 1.14858536 ;  Train Accuracy: 47.511 ;  Val Loss: 0.60254007 ;  Val Accuracy: 84.220 ;
+Epoch: 83 ;  Train Loss: 1.15396414 ;  Train Accuracy: 48.858 ;  Val Loss: 0.60826932 ;  Val Accuracy: 81.720 ;
+Epoch: 84 ;  Train Loss: 1.16921029 ;  Train Accuracy: 49.324 ;  Val Loss: 0.78160081 ;  Val Accuracy: 78.600 ;
+Epoch: 85 ;  Train Loss: 1.17397026 ;  Train Accuracy: 47.469 ;  Val Loss: 0.60572655 ;  Val Accuracy: 85.440 ;
+Epoch: 86 ;  Train Loss: 1.15170054 ;  Train Accuracy: 48.811 ;  Val Loss: 0.76742674 ;  Val Accuracy: 77.040 ;
+Epoch: 87 ;  Train Loss: 1.15920327 ;  Train Accuracy: 46.038 ;  Val Loss: 0.73453299 ;  Val Accuracy: 78.940 ;
+Epoch: 88 ;  Train Loss: 1.15998488 ;  Train Accuracy: 47.876 ;  Val Loss: 0.63936860 ;  Val Accuracy: 81.240 ;
+Epoch: 89 ;  Train Loss: 1.14626165 ;  Train Accuracy: 49.469 ;  Val Loss: 0.75605919 ;  Val Accuracy: 76.360 ;
+Epoch: 90 ;  Train Loss: 1.13739067 ;  Train Accuracy: 43.860 ;  Val Loss: 0.60695748 ;  Val Accuracy: 84.920 ;
+Epoch: 91 ;  Train Loss: 1.16504680 ;  Train Accuracy: 49.160 ;  Val Loss: 0.74751397 ;  Val Accuracy: 77.480 ;
+Epoch: 92 ;  Train Loss: 1.14800202 ;  Train Accuracy: 46.302 ;  Val Loss: 0.60545813 ;  Val Accuracy: 85.720 ;
+Epoch: 93 ;  Train Loss: 1.14245233 ;  Train Accuracy: 48.540 ;  Val Loss: 0.64963014 ;  Val Accuracy: 84.860 ;
+Epoch: 94 ;  Train Loss: 1.17128123 ;  Train Accuracy: 49.407 ;  Val Loss: 0.60113897 ;  Val Accuracy: 84.260 ;
+Epoch: 95 ;  Train Loss: 1.13926192 ;  Train Accuracy: 47.356 ;  Val Loss: 0.57596163 ;  Val Accuracy: 84.180 ;
+Epoch: 96 ;  Train Loss: 1.18003456 ;  Train Accuracy: 47.871 ;  Val Loss: 0.67430396 ;  Val Accuracy: 81.080 ;
+Epoch: 97 ;  Train Loss: 1.16213873 ;  Train Accuracy: 48.562 ;  Val Loss: 0.61828106 ;  Val Accuracy: 83.300 ;
+Epoch: 98 ;  Train Loss: 1.16754998 ;  Train Accuracy: 48.809 ;  Val Loss: 0.67732614 ;  Val Accuracy: 80.420 ;
+Epoch: 99 ;  Train Loss: 1.13854089 ;  Train Accuracy: 47.553 ;  Val Loss: 0.71482559 ;  Val Accuracy: 78.220 ;
+Epoch: 100 ;  Train Loss: 1.15425390 ;  Train Accuracy: 49.504 ;  Val Loss: 0.78630577 ;  Val Accuracy: 76.100 ;
+Epoch: 101 ;  Train Loss: 1.15282620 ;  Train Accuracy: 46.409 ;  Val Loss: 0.66208959 ;  Val Accuracy: 81.400 ;
+Epoch: 102 ;  Train Loss: 1.02632410 ;  Train Accuracy: 47.871 ;  Val Loss: 0.42932249 ;  Val Accuracy: 92.340 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 103 ;  Train Loss: 1.03757079 ;  Train Accuracy: 48.804 ;  Val Loss: 0.38496761 ;  Val Accuracy: 92.560 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 104 ;  Train Loss: 1.01921058 ;  Train Accuracy: 48.936 ;  Val Loss: 0.40280174 ;  Val Accuracy: 92.420 ;
+Epoch: 105 ;  Train Loss: 1.00921292 ;  Train Accuracy: 52.831 ;  Val Loss: 0.38181953 ;  Val Accuracy: 92.640 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 106 ;  Train Loss: 0.99590772 ;  Train Accuracy: 50.453 ;  Val Loss: 0.37937721 ;  Val Accuracy: 92.580 ;
+Epoch: 107 ;  Train Loss: 0.99668508 ;  Train Accuracy: 51.329 ;  Val Loss: 0.35621127 ;  Val Accuracy: 92.720 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 108 ;  Train Loss: 1.00396391 ;  Train Accuracy: 51.516 ;  Val Loss: 0.38484884 ;  Val Accuracy: 92.800 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 109 ;  Train Loss: 1.00484938 ;  Train Accuracy: 48.591 ;  Val Loss: 0.33000352 ;  Val Accuracy: 92.960 ;
+
+Network State saved (AA7Test_200_state.pt)
+
+Epoch: 110 ;  Train Loss: 1.00245099 ;  Train Accuracy: 52.807 ;  Val Loss: 0.39778599 ;  Val Accuracy: 92.600 ;
+Epoch: 111 ;  Train Loss: 0.99672842 ;  Train Accuracy: 50.840 ;  Val Loss: 0.38730614 ;  Val Accuracy: 92.520 ;
+Epoch: 112 ;  Train Loss: 0.98708031 ;  Train Accuracy: 49.547 ;  Val Loss: 0.34744078 ;  Val Accuracy: 92.740 ;
+Epoch: 113 ;  Train Loss: 1.02456807 ;  Train Accuracy: 47.324 ;  Val Loss: 0.32210250 ;  Val Accuracy: 92.820 ;
+Epoch: 114 ;  Train Loss: 1.01770059 ;  Train Accuracy: 49.182 ;  Val Loss: 0.40850131 ;  Val Accuracy: 92.360 ;
+Epoch: 115 ;  Train Loss: 0.99485087 ;  Train Accuracy: 48.436 ;  Val Loss: 0.37603314 ;  Val Accuracy: 92.500 ;
+Epoch: 116 ;  Train Loss: 1.01218966 ;  Train Accuracy: 52.342 ;  Val Loss: 0.41527036 ;  Val Accuracy: 92.440 ;
+Epoch: 117 ;  Train Loss: 0.97057114 ;  Train Accuracy: 49.820 ;  Val Loss: 0.38867264 ;  Val Accuracy: 92.520 ;
+Epoch: 118 ;  Train Loss: 1.01697256 ;  Train Accuracy: 47.091 ;  Val Loss: 0.36870871 ;  Val Accuracy: 92.700 ;
+Epoch: 119 ;  Train Loss: 0.99793319 ;  Train Accuracy: 53.173 ;  Val Loss: 0.39300947 ;  Val Accuracy: 92.500 ;
+Epoch: 120 ;  Train Loss: 0.99509505 ;  Train Accuracy: 48.262 ;  Val Loss: 0.36072742 ;  Val Accuracy: 92.680 ;
+Epoch: 121 ;  Train Loss: 0.99840275 ;  Train Accuracy: 50.096 ;  Val Loss: 0.35416940 ;  Val Accuracy: 92.860 ;
+Epoch: 122 ;  Train Loss: 0.96699608 ;  Train Accuracy: 48.207 ;  Val Loss: 0.41962931 ;  Val Accuracy: 92.300 ;
+Epoch: 123 ;  Train Loss: 1.00853217 ;  Train Accuracy: 49.216 ;  Val Loss: 0.35261078 ;  Val Accuracy: 92.780 ;
+Epoch: 124 ;  Train Loss: 1.01403260 ;  Train Accuracy: 52.511 ;  Val Loss: 0.35029951 ;  Val Accuracy: 92.600 ;
+Epoch: 125 ;  Train Loss: 0.98689571 ;  Train Accuracy: 53.156 ;  Val Loss: 0.36679772 ;  Val Accuracy: 92.580 ;
+Epoch: 126 ;  Train Loss: 0.98217696 ;  Train Accuracy: 48.409 ;  Val Loss: 0.40661307 ;  Val Accuracy: 92.400 ;
+Epoch: 127 ;  Train Loss: 0.99200102 ;  Train Accuracy: 48.827 ;  Val Loss: 0.40746129 ;  Val Accuracy: 92.280 ;
+Epoch: 128 ;  Train Loss: 1.02521726 ;  Train Accuracy: 50.993 ;  Val Loss: 0.41646168 ;  Val Accuracy: 92.160 ;
+Epoch: 129 ;  Train Loss: 0.97458825 ;  Train Accuracy: 51.920 ;  Val Loss: 0.38520797 ;  Val Accuracy: 92.460 ;
+Epoch: 130 ;  Train Loss: 0.97147671 ;  Train Accuracy: 52.291 ;  Val Loss: 0.37585423 ;  Val Accuracy: 92.700 ;
+Epoch: 131 ;  Train Loss: 1.04289671 ;  Train Accuracy: 53.487 ;  Val Loss: 0.40468550 ;  Val Accuracy: 92.420 ;
+Epoch: 132 ;  Train Loss: 1.01985729 ;  Train Accuracy: 52.240 ;  Val Loss: 0.38691144 ;  Val Accuracy: 92.640 ;
+Epoch: 133 ;  Train Loss: 1.03603069 ;  Train Accuracy: 54.816 ;  Val Loss: 0.38737700 ;  Val Accuracy: 92.440 ;
+Epoch: 134 ;  Train Loss: 0.99219412 ;  Train Accuracy: 53.847 ;  Val Loss: 0.31653510 ;  Val Accuracy: 92.920 ;
+Epoch: 135 ;  Train Loss: 0.98817235 ;  Train Accuracy: 53.687 ;  Val Loss: 0.35505712 ;  Val Accuracy: 92.660 ;
+Epoch: 136 ;  Train Loss: 0.97954519 ;  Train Accuracy: 49.636 ;  Val Loss: 0.40478544 ;  Val Accuracy: 92.340 ;
+Epoch: 137 ;  Train Loss: 0.98361867 ;  Train Accuracy: 50.227 ;  Val Loss: 0.36010901 ;  Val Accuracy: 92.720 ;
+Epoch: 138 ;  Train Loss: 1.00025571 ;  Train Accuracy: 52.582 ;  Val Loss: 0.37721160 ;  Val Accuracy: 92.560 ;
+Epoch: 139 ;  Train Loss: 1.00560656 ;  Train Accuracy: 51.916 ;  Val Loss: 0.39866738 ;  Val Accuracy: 92.320 ;
+Epoch: 140 ;  Train Loss: 1.00298434 ;  Train Accuracy: 48.682 ;  Val Loss: 0.35020476 ;  Val Accuracy: 92.540 ;
+Epoch: 141 ;  Train Loss: 0.94662632 ;  Train Accuracy: 51.849 ;  Val Loss: 0.35640948 ;  Val Accuracy: 92.720 ;
+Epoch: 142 ;  Train Loss: 1.01568496 ;  Train Accuracy: 51.696 ;  Val Loss: 0.41380787 ;  Val Accuracy: 92.340 ;
+Epoch: 143 ;  Train Loss: 0.99951897 ;  Train Accuracy: 48.980 ;  Val Loss: 0.39274984 ;  Val Accuracy: 92.500 ;
+Epoch: 144 ;  Train Loss: 0.98168418 ;  Train Accuracy: 49.918 ;  Val Loss: 0.37871367 ;  Val Accuracy: 92.640 ;
+Epoch: 145 ;  Train Loss: 0.97925619 ;  Train Accuracy: 52.231 ;  Val Loss: 0.36479936 ;  Val Accuracy: 92.780 ;
+Epoch: 146 ;  Train Loss: 1.01190319 ;  Train Accuracy: 48.816 ;  Val Loss: 0.36772971 ;  Val Accuracy: 92.600 ;
+Epoch: 147 ;  Train Loss: 0.99719892 ;  Train Accuracy: 49.067 ;  Val Loss: 0.37581888 ;  Val Accuracy: 92.600 ;
+Epoch: 148 ;  Train Loss: 1.00511089 ;  Train Accuracy: 52.107 ;  Val Loss: 0.38713546 ;  Val Accuracy: 92.540 ;
+Epoch: 149 ;  Train Loss: 1.01370531 ;  Train Accuracy: 50.027 ;  Val Loss: 0.38806151 ;  Val Accuracy: 92.500 ;
+Epoch: 150 ;  Train Loss: 1.01192772 ;  Train Accuracy: 48.927 ;  Val Loss: 0.42894792 ;  Val Accuracy: 92.360 ;
+Epoch: 151 ;  Train Loss: 1.04020060 ;  Train Accuracy: 47.020 ;  Val Loss: 0.38923759 ;  Val Accuracy: 92.480 ;
+Epoch: 152 ;  Train Loss: 0.98221013 ;  Train Accuracy: 49.356 ;  Val Loss: 0.37996962 ;  Val Accuracy: 92.580 ;
+Epoch: 153 ;  Train Loss: 1.02128482 ;  Train Accuracy: 50.887 ;  Val Loss: 0.40411866 ;  Val Accuracy: 92.260 ;
+Epoch: 154 ;  Train Loss: 1.01330227 ;  Train Accuracy: 54.209 ;  Val Loss: 0.37014451 ;  Val Accuracy: 92.560 ;
+Epoch: 155 ;  Train Loss: 1.01414738 ;  Train Accuracy: 53.422 ;  Val Loss: 0.37077737 ;  Val Accuracy: 92.620 ;
+Epoch: 156 ;  Train Loss: 0.99784782 ;  Train Accuracy: 52.384 ;  Val Loss: 0.38991961 ;  Val Accuracy: 92.420 ;
+Epoch: 157 ;  Train Loss: 1.00239821 ;  Train Accuracy: 47.860 ;  Val Loss: 0.36784292 ;  Val Accuracy: 92.660 ;
+Epoch: 158 ;  Train Loss: 1.00656934 ;  Train Accuracy: 52.991 ;  Val Loss: 0.41494845 ;  Val Accuracy: 92.300 ;
+Epoch: 159 ;  Train Loss: 0.98693780 ;  Train Accuracy: 52.802 ;  Val Loss: 0.39197643 ;  Val Accuracy: 92.460 ;
+Epoch: 160 ;  Train Loss: 0.98006536 ;  Train Accuracy: 53.476 ;  Val Loss: 0.44213902 ;  Val Accuracy: 92.200 ;
+Epoch: 161 ;  Train Loss: 0.99057211 ;  Train Accuracy: 52.158 ;  Val Loss: 0.35714116 ;  Val Accuracy: 92.560 ;
+Epoch: 162 ;  Train Loss: 0.95138364 ;  Train Accuracy: 48.367 ;  Val Loss: 0.33836363 ;  Val Accuracy: 92.720 ;
+Epoch: 163 ;  Train Loss: 0.98107436 ;  Train Accuracy: 52.984 ;  Val Loss: 0.35705375 ;  Val Accuracy: 92.600 ;
+Epoch: 164 ;  Train Loss: 0.97015657 ;  Train Accuracy: 49.636 ;  Val Loss: 0.33595712 ;  Val Accuracy: 92.780 ;
+Epoch: 165 ;  Train Loss: 1.02512085 ;  Train Accuracy: 54.609 ;  Val Loss: 0.41955116 ;  Val Accuracy: 92.280 ;
+Epoch: 166 ;  Train Loss: 0.99471406 ;  Train Accuracy: 52.831 ;  Val Loss: 0.41651947 ;  Val Accuracy: 92.400 ;
+Epoch: 167 ;  Train Loss: 0.96636628 ;  Train Accuracy: 51.682 ;  Val Loss: 0.40138961 ;  Val Accuracy: 92.440 ;
+Epoch: 168 ;  Train Loss: 1.00354647 ;  Train Accuracy: 49.104 ;  Val Loss: 0.34449170 ;  Val Accuracy: 92.580 ;
+Epoch: 169 ;  Train Loss: 1.00899513 ;  Train Accuracy: 53.042 ;  Val Loss: 0.36825583 ;  Val Accuracy: 92.640 ;
+Epoch: 170 ;  Train Loss: 0.98513739 ;  Train Accuracy: 51.433 ;  Val Loss: 0.35152846 ;  Val Accuracy: 92.700 ;
+Epoch: 171 ;  Train Loss: 0.97149525 ;  Train Accuracy: 49.696 ;  Val Loss: 0.36617007 ;  Val Accuracy: 92.580 ;
+Epoch: 172 ;  Train Loss: 1.00158025 ;  Train Accuracy: 53.582 ;  Val Loss: 0.36369740 ;  Val Accuracy: 92.820 ;
+Epoch: 173 ;  Train Loss: 0.99608313 ;  Train Accuracy: 49.431 ;  Val Loss: 0.37773188 ;  Val Accuracy: 92.600 ;
+Epoch: 174 ;  Train Loss: 1.00155104 ;  Train Accuracy: 47.569 ;  Val Loss: 0.33962546 ;  Val Accuracy: 92.740 ;
+Epoch: 175 ;  Train Loss: 0.99085130 ;  Train Accuracy: 51.089 ;  Val Loss: 0.39790473 ;  Val Accuracy: 92.300 ;
+Epoch: 176 ;  Train Loss: 1.01042981 ;  Train Accuracy: 47.689 ;  Val Loss: 0.33982934 ;  Val Accuracy: 92.640 ;
+Epoch: 177 ;  Train Loss: 0.95515620 ;  Train Accuracy: 53.040 ;  Val Loss: 0.35501786 ;  Val Accuracy: 92.660 ;
+Epoch: 178 ;  Train Loss: 0.98102899 ;  Train Accuracy: 51.329 ;  Val Loss: 0.41635205 ;  Val Accuracy: 92.340 ;
+Epoch: 179 ;  Train Loss: 1.00335585 ;  Train Accuracy: 50.062 ;  Val Loss: 0.38524406 ;  Val Accuracy: 92.680 ;
+Epoch: 180 ;  Train Loss: 1.02187396 ;  Train Accuracy: 49.044 ;  Val Loss: 0.38657946 ;  Val Accuracy: 92.460 ;
+Epoch: 181 ;  Train Loss: 0.99482636 ;  Train Accuracy: 50.673 ;  Val Loss: 0.40273852 ;  Val Accuracy: 92.400 ;
+Epoch: 182 ;  Train Loss: 0.99881247 ;  Train Accuracy: 50.216 ;  Val Loss: 0.34203297 ;  Val Accuracy: 92.600 ;
+Epoch: 183 ;  Train Loss: 1.00329824 ;  Train Accuracy: 51.664 ;  Val Loss: 0.38809841 ;  Val Accuracy: 92.460 ;
+Epoch: 184 ;  Train Loss: 0.99187361 ;  Train Accuracy: 48.684 ;  Val Loss: 0.38483640 ;  Val Accuracy: 92.500 ;
+Epoch: 185 ;  Train Loss: 0.95121386 ;  Train Accuracy: 49.796 ;  Val Loss: 0.34565760 ;  Val Accuracy: 92.820 ;
+Epoch: 186 ;  Train Loss: 1.02936574 ;  Train Accuracy: 52.487 ;  Val Loss: 0.35437347 ;  Val Accuracy: 92.680 ;
+Epoch: 187 ;  Train Loss: 0.99152732 ;  Train Accuracy: 48.956 ;  Val Loss: 0.40738628 ;  Val Accuracy: 92.320 ;
+Epoch: 188 ;  Train Loss: 0.97166258 ;  Train Accuracy: 50.462 ;  Val Loss: 0.39618821 ;  Val Accuracy: 92.260 ;
+Epoch: 189 ;  Train Loss: 1.02333748 ;  Train Accuracy: 51.671 ;  Val Loss: 0.38629716 ;  Val Accuracy: 92.400 ;
+Epoch: 190 ;  Train Loss: 0.99019886 ;  Train Accuracy: 52.142 ;  Val Loss: 0.38349329 ;  Val Accuracy: 92.400 ;
+Epoch: 191 ;  Train Loss: 0.99432094 ;  Train Accuracy: 52.498 ;  Val Loss: 0.39817961 ;  Val Accuracy: 92.380 ;
+Epoch: 192 ;  Train Loss: 0.95784899 ;  Train Accuracy: 49.900 ;  Val Loss: 0.42886152 ;  Val Accuracy: 92.420 ;
+Epoch: 193 ;  Train Loss: 1.01221296 ;  Train Accuracy: 49.727 ;  Val Loss: 0.38989882 ;  Val Accuracy: 92.500 ;
+Epoch: 194 ;  Train Loss: 1.00479595 ;  Train Accuracy: 52.618 ;  Val Loss: 0.43268193 ;  Val Accuracy: 92.160 ;
+Epoch: 195 ;  Train Loss: 1.00605631 ;  Train Accuracy: 54.271 ;  Val Loss: 0.38246479 ;  Val Accuracy: 92.700 ;
+Epoch: 196 ;  Train Loss: 0.97236146 ;  Train Accuracy: 47.193 ;  Val Loss: 0.38995347 ;  Val Accuracy: 92.480 ;
+Epoch: 197 ;  Train Loss: 0.99047630 ;  Train Accuracy: 52.158 ;  Val Loss: 0.34656832 ;  Val Accuracy: 92.720 ;
+Epoch: 198 ;  Train Loss: 0.99918769 ;  Train Accuracy: 50.749 ;  Val Loss: 0.38852550 ;  Val Accuracy: 92.600 ;
+Epoch: 199 ;  Train Loss: 1.01763912 ;  Train Accuracy: 50.536 ;  Val Loss: 0.40403809 ;  Val Accuracy: 92.300 ;
+Epoch: 200 ;  Train Loss: 0.96873399 ;  Train Accuracy: 48.407 ;  Val Loss: 0.36562358 ;  Val Accuracy: 92.560 ;
+
+Epochs: 200 ;	Test Loss: 0.36559891 ; 	Test Accuracy: 92.210 ;
+
+Best Accuracy: 92.960
+
+
+Saving Error Plot...
+
+Error Plot saved (AA7Test_error_plot.png)
+
+
+
+Run Config: 
+------------------------------
+data_path          : CIFAR10/
+train_batch_size   : 128
+val_batch_size     : 256
+test_batch_size    : 256
+epochs             : 200
+test_transform     : TestTransform_1
+train_transform    : TrainTransform_1
+resume             : AA7Test_200
+model              : ResNet24_1
+optimizer          : sgd
+learning_rate      : 0.1
+momentum           : 0.9
+weight_decay       : 0.0005
+mixup              : True
+schedule           : True
+anneal             : True
+validate           : True
+save               : True
+print_summary      : False
+no_training        : False
+save_plot          : True
+plot_transforms    : False
+output_file_prefix : AA7Test
+
+Running on  CUDA 
+
+Number of GPUs: 1 
+
+Cuda Capability: (7, 5)
+Files already downloaded and verified
+Files already downloaded and verified
+
+
+Resuming from checkpoint..
+
+
+Training...
+
+
+Epoch: 110 ;  Train Loss: 1.00492198 ;  Train Accuracy: 51.393 ;  Val Loss: 0.40276926 ;  Val Accuracy: 92.620 ;
+Epoch: 111 ;  Train Loss: 0.99089470 ;  Train Accuracy: 55.184 ;  Val Loss: 0.33958615 ;  Val Accuracy: 92.600 ;
+Epoch: 112 ;  Train Loss: 0.92136074 ;  Train Accuracy: 49.736 ;  Val Loss: 0.31380716 ;  Val Accuracy: 93.040 ;
+
+Network State saved (AA7Test_309_state.pt)
+
+Epoch: 113 ;  Train Loss: 0.97146011 ;  Train Accuracy: 51.531 ;  Val Loss: 0.38074031 ;  Val Accuracy: 92.780 ;
+Epoch: 114 ;  Train Loss: 0.95721488 ;  Train Accuracy: 53.144 ;  Val Loss: 0.34231417 ;  Val Accuracy: 93.060 ;
+
+Network State saved (AA7Test_309_state.pt)
+
+Epoch: 115 ;  Train Loss: 0.93940616 ;  Train Accuracy: 52.944 ;  Val Loss: 0.37841268 ;  Val Accuracy: 92.800 ;
+Epoch: 116 ;  Train Loss: 0.95783022 ;  Train Accuracy: 53.467 ;  Val Loss: 0.36010633 ;  Val Accuracy: 93.000 ;
+Epoch: 117 ;  Train Loss: 0.97625677 ;  Train Accuracy: 53.624 ;  Val Loss: 0.40006542 ;  Val Accuracy: 92.840 ;
+Epoch: 118 ;  Train Loss: 0.92933647 ;  Train Accuracy: 49.220 ;  Val Loss: 0.35113735 ;  Val Accuracy: 92.920 ;
+Epoch: 119 ;  Train Loss: 0.96417194 ;  Train Accuracy: 52.480 ;  Val Loss: 0.38423173 ;  Val Accuracy: 92.900 ;
+Epoch: 120 ;  Train Loss: 0.96164365 ;  Train Accuracy: 52.791 ;  Val Loss: 0.34243102 ;  Val Accuracy: 92.980 ;
+Epoch: 121 ;  Train Loss: 0.97493525 ;  Train Accuracy: 49.676 ;  Val Loss: 0.35469458 ;  Val Accuracy: 93.020 ;
+Epoch: 122 ;  Train Loss: 0.96357294 ;  Train Accuracy: 50.378 ;  Val Loss: 0.35597569 ;  Val Accuracy: 92.940 ;
+Epoch: 123 ;  Train Loss: 0.98797076 ;  Train Accuracy: 54.060 ;  Val Loss: 0.36664258 ;  Val Accuracy: 92.960 ;
+Epoch: 124 ;  Train Loss: 0.95633143 ;  Train Accuracy: 51.233 ;  Val Loss: 0.39225879 ;  Val Accuracy: 92.760 ;
+Epoch: 125 ;  Train Loss: 0.97889547 ;  Train Accuracy: 51.222 ;  Val Loss: 0.36416163 ;  Val Accuracy: 92.980 ;
+Epoch: 126 ;  Train Loss: 0.97673574 ;  Train Accuracy: 49.296 ;  Val Loss: 0.32299336 ;  Val Accuracy: 93.020 ;
+Epoch: 127 ;  Train Loss: 0.99289553 ;  Train Accuracy: 53.093 ;  Val Loss: 0.33520524 ;  Val Accuracy: 93.000 ;
+Epoch: 128 ;  Train Loss: 0.99147400 ;  Train Accuracy: 50.789 ;  Val Loss: 0.38821037 ;  Val Accuracy: 92.840 ;
+Epoch: 129 ;  Train Loss: 0.96606693 ;  Train Accuracy: 50.247 ;  Val Loss: 0.34866643 ;  Val Accuracy: 92.900 ;
+Epoch: 130 ;  Train Loss: 0.95660825 ;  Train Accuracy: 54.467 ;  Val Loss: 0.33909153 ;  Val Accuracy: 92.960 ;
+Epoch: 131 ;  Train Loss: 1.00336086 ;  Train Accuracy: 53.198 ;  Val Loss: 0.35557197 ;  Val Accuracy: 92.860 ;
+Epoch: 132 ;  Train Loss: 0.98101166 ;  Train Accuracy: 50.684 ;  Val Loss: 0.33538521 ;  Val Accuracy: 93.060 ;
+Epoch: 133 ;  Train Loss: 1.01109386 ;  Train Accuracy: 50.298 ;  Val Loss: 0.32022264 ;  Val Accuracy: 93.060 ;
+Epoch: 134 ;  Train Loss: 0.98173207 ;  Train Accuracy: 48.776 ;  Val Loss: 0.34956341 ;  Val Accuracy: 93.100 ;
+
+Network State saved (AA7Test_309_state.pt)
+
+Epoch: 135 ;  Train Loss: 0.97907882 ;  Train Accuracy: 51.189 ;  Val Loss: 0.35551925 ;  Val Accuracy: 92.880 ;
+Epoch: 136 ;  Train Loss: 0.96279545 ;  Train Accuracy: 49.720 ;  Val Loss: 0.38430613 ;  Val Accuracy: 92.920 ;
+Epoch: 137 ;  Train Loss: 0.97332363 ;  Train Accuracy: 53.009 ;  Val Loss: 0.37533195 ;  Val Accuracy: 92.940 ;
+Epoch: 138 ;  Train Loss: 1.02710041 ;  Train Accuracy: 50.989 ;  Val Loss: 0.38734568 ;  Val Accuracy: 92.800 ;
+Epoch: 139 ;  Train Loss: 0.99568753 ;  Train Accuracy: 47.598 ;  Val Loss: 0.35988935 ;  Val Accuracy: 92.920 ;
+Epoch: 140 ;  Train Loss: 0.98645495 ;  Train Accuracy: 51.849 ;  Val Loss: 0.35716118 ;  Val Accuracy: 92.900 ;
+Epoch: 141 ;  Train Loss: 0.97595836 ;  Train Accuracy: 49.036 ;  Val Loss: 0.35068240 ;  Val Accuracy: 92.840 ;
+Epoch: 142 ;  Train Loss: 0.99265739 ;  Train Accuracy: 48.349 ;  Val Loss: 0.34437749 ;  Val Accuracy: 92.880 ;
+Epoch: 143 ;  Train Loss: 0.93782020 ;  Train Accuracy: 52.389 ;  Val Loss: 0.36971837 ;  Val Accuracy: 92.840 ;
+Epoch: 144 ;  Train Loss: 0.99711975 ;  Train Accuracy: 53.729 ;  Val Loss: 0.35760949 ;  Val Accuracy: 92.920 ;
+Epoch: 145 ;  Train Loss: 0.93823821 ;  Train Accuracy: 50.280 ;  Val Loss: 0.34876058 ;  Val Accuracy: 92.860 ;
+Epoch: 146 ;  Train Loss: 0.99611956 ;  Train Accuracy: 54.587 ;  Val Loss: 0.35996244 ;  Val Accuracy: 92.980 ;
+Epoch: 147 ;  Train Loss: 0.97960512 ;  Train Accuracy: 47.976 ;  Val Loss: 0.34388786 ;  Val Accuracy: 93.040 ;
+Epoch: 148 ;  Train Loss: 0.95960313 ;  Train Accuracy: 51.804 ;  Val Loss: 0.38935198 ;  Val Accuracy: 92.740 ;
+Epoch: 149 ;  Train Loss: 0.98762084 ;  Train Accuracy: 50.098 ;  Val Loss: 0.35412767 ;  Val Accuracy: 92.800 ;
+Epoch: 150 ;  Train Loss: 0.94786662 ;  Train Accuracy: 53.776 ;  Val Loss: 0.36594799 ;  Val Accuracy: 92.960 ;
+Epoch: 151 ;  Train Loss: 0.99855482 ;  Train Accuracy: 55.431 ;  Val Loss: 0.35321590 ;  Val Accuracy: 92.980 ;
+Epoch: 152 ;  Train Loss: 0.99258917 ;  Train Accuracy: 49.693 ;  Val Loss: 0.38972666 ;  Val Accuracy: 92.800 ;
+Epoch: 153 ;  Train Loss: 0.93864716 ;  Train Accuracy: 51.984 ;  Val Loss: 0.35803352 ;  Val Accuracy: 92.940 ;
+Epoch: 154 ;  Train Loss: 0.97228257 ;  Train Accuracy: 49.947 ;  Val Loss: 0.35199247 ;  Val Accuracy: 92.800 ;
+Epoch: 155 ;  Train Loss: 0.96118780 ;  Train Accuracy: 50.531 ;  Val Loss: 0.37880018 ;  Val Accuracy: 92.780 ;
+Epoch: 156 ;  Train Loss: 0.99013471 ;  Train Accuracy: 49.073 ;  Val Loss: 0.32579514 ;  Val Accuracy: 93.160 ;
+
+Network State saved (AA7Test_309_state.pt)
+
+Epoch: 157 ;  Train Loss: 0.96014645 ;  Train Accuracy: 50.478 ;  Val Loss: 0.33982524 ;  Val Accuracy: 93.140 ;
+Epoch: 158 ;  Train Loss: 0.94137149 ;  Train Accuracy: 52.611 ;  Val Loss: 0.32333407 ;  Val Accuracy: 93.120 ;
+Epoch: 159 ;  Train Loss: 0.94996183 ;  Train Accuracy: 51.664 ;  Val Loss: 0.35544325 ;  Val Accuracy: 92.960 ;
+Epoch: 160 ;  Train Loss: 0.96182094 ;  Train Accuracy: 53.007 ;  Val Loss: 0.33971866 ;  Val Accuracy: 93.080 ;
+Epoch: 161 ;  Train Loss: 0.96194352 ;  Train Accuracy: 48.878 ;  Val Loss: 0.37096521 ;  Val Accuracy: 92.940 ;
+Epoch: 162 ;  Train Loss: 0.96414913 ;  Train Accuracy: 51.149 ;  Val Loss: 0.34943130 ;  Val Accuracy: 92.960 ;
+Epoch: 163 ;  Train Loss: 0.99183740 ;  Train Accuracy: 53.478 ;  Val Loss: 0.35326430 ;  Val Accuracy: 92.980 ;
+Epoch: 164 ;  Train Loss: 0.96159985 ;  Train Accuracy: 51.140 ;  Val Loss: 0.29774711 ;  Val Accuracy: 93.400 ;
+
+Network State saved (AA7Test_309_state.pt)
+
+Epoch: 165 ;  Train Loss: 0.97318722 ;  Train Accuracy: 50.967 ;  Val Loss: 0.35793743 ;  Val Accuracy: 93.140 ;
+Epoch: 166 ;  Train Loss: 0.99462653 ;  Train Accuracy: 52.311 ;  Val Loss: 0.36235239 ;  Val Accuracy: 92.820 ;
+Epoch: 167 ;  Train Loss: 0.94934852 ;  Train Accuracy: 53.100 ;  Val Loss: 0.34904998 ;  Val Accuracy: 93.120 ;
+Epoch: 168 ;  Train Loss: 0.94061838 ;  Train Accuracy: 50.273 ;  Val Loss: 0.34366940 ;  Val Accuracy: 92.980 ;
+Epoch: 169 ;  Train Loss: 1.00045541 ;  Train Accuracy: 51.691 ;  Val Loss: 0.34222093 ;  Val Accuracy: 92.900 ;
+Epoch: 170 ;  Train Loss: 0.95178968 ;  Train Accuracy: 51.002 ;  Val Loss: 0.33778087 ;  Val Accuracy: 93.000 ;
+Epoch: 171 ;  Train Loss: 0.99860867 ;  Train Accuracy: 52.040 ;  Val Loss: 0.35394614 ;  Val Accuracy: 92.920 ;
+Epoch: 172 ;  Train Loss: 0.96856139 ;  Train Accuracy: 54.631 ;  Val Loss: 0.32626853 ;  Val Accuracy: 93.160 ;
+Epoch: 173 ;  Train Loss: 0.98937094 ;  Train Accuracy: 49.593 ;  Val Loss: 0.31667428 ;  Val Accuracy: 93.060 ;
+Epoch: 174 ;  Train Loss: 0.98270416 ;  Train Accuracy: 54.153 ;  Val Loss: 0.35307869 ;  Val Accuracy: 92.900 ;
+Epoch: 175 ;  Train Loss: 0.95710034 ;  Train Accuracy: 50.598 ;  Val Loss: 0.33812588 ;  Val Accuracy: 92.860 ;
+Epoch: 176 ;  Train Loss: 0.94845632 ;  Train Accuracy: 53.364 ;  Val Loss: 0.35289309 ;  Val Accuracy: 92.940 ;
+Epoch: 177 ;  Train Loss: 1.00202310 ;  Train Accuracy: 51.133 ;  Val Loss: 0.35759546 ;  Val Accuracy: 92.940 ;
+Epoch: 178 ;  Train Loss: 1.00828714 ;  Train Accuracy: 52.931 ;  Val Loss: 0.35121801 ;  Val Accuracy: 93.000 ;
+Epoch: 179 ;  Train Loss: 0.98539335 ;  Train Accuracy: 48.824 ;  Val Loss: 0.34854265 ;  Val Accuracy: 93.000 ;
+Epoch: 180 ;  Train Loss: 0.93939513 ;  Train Accuracy: 49.358 ;  Val Loss: 0.36577909 ;  Val Accuracy: 92.920 ;
+Epoch: 181 ;  Train Loss: 0.95594477 ;  Train Accuracy: 51.298 ;  Val Loss: 0.38030266 ;  Val Accuracy: 92.880 ;
+Epoch: 182 ;  Train Loss: 0.96937257 ;  Train Accuracy: 50.836 ;  Val Loss: 0.35589202 ;  Val Accuracy: 92.920 ;
+Epoch: 183 ;  Train Loss: 0.97307072 ;  Train Accuracy: 53.531 ;  Val Loss: 0.35709674 ;  Val Accuracy: 93.100 ;
+Epoch: 184 ;  Train Loss: 0.98907787 ;  Train Accuracy: 53.851 ;  Val Loss: 0.34043106 ;  Val Accuracy: 92.980 ;
+Epoch: 185 ;  Train Loss: 0.96153603 ;  Train Accuracy: 52.967 ;  Val Loss: 0.38470846 ;  Val Accuracy: 92.800 ;
+Epoch: 186 ;  Train Loss: 0.98086854 ;  Train Accuracy: 49.307 ;  Val Loss: 0.39368370 ;  Val Accuracy: 92.840 ;
+Epoch: 187 ;  Train Loss: 0.94547926 ;  Train Accuracy: 50.713 ;  Val Loss: 0.35061278 ;  Val Accuracy: 92.940 ;
+Epoch: 188 ;  Train Loss: 0.99336990 ;  Train Accuracy: 52.629 ;  Val Loss: 0.37625317 ;  Val Accuracy: 92.860 ;
+Epoch: 189 ;  Train Loss: 0.93616513 ;  Train Accuracy: 54.324 ;  Val Loss: 0.31490230 ;  Val Accuracy: 93.160 ;
+Epoch: 190 ;  Train Loss: 0.96573576 ;  Train Accuracy: 54.333 ;  Val Loss: 0.35107231 ;  Val Accuracy: 92.980 ;
+Epoch: 191 ;  Train Loss: 0.97721868 ;  Train Accuracy: 49.820 ;  Val Loss: 0.34357666 ;  Val Accuracy: 93.080 ;
+Epoch: 192 ;  Train Loss: 0.99049566 ;  Train Accuracy: 52.213 ;  Val Loss: 0.38432416 ;  Val Accuracy: 92.920 ;
+Epoch: 193 ;  Train Loss: 0.98279032 ;  Train Accuracy: 53.420 ;  Val Loss: 0.34977729 ;  Val Accuracy: 93.080 ;
+Epoch: 194 ;  Train Loss: 0.99337014 ;  Train Accuracy: 51.351 ;  Val Loss: 0.35784346 ;  Val Accuracy: 93.000 ;
+Epoch: 195 ;  Train Loss: 0.92646093 ;  Train Accuracy: 54.838 ;  Val Loss: 0.34794990 ;  Val Accuracy: 92.920 ;
+Epoch: 196 ;  Train Loss: 0.98444659 ;  Train Accuracy: 50.462 ;  Val Loss: 0.39420599 ;  Val Accuracy: 92.820 ;
+Epoch: 197 ;  Train Loss: 0.97447745 ;  Train Accuracy: 51.331 ;  Val Loss: 0.32770133 ;  Val Accuracy: 92.920 ;
+Epoch: 198 ;  Train Loss: 0.94967218 ;  Train Accuracy: 54.904 ;  Val Loss: 0.36116353 ;  Val Accuracy: 92.980 ;
+Epoch: 199 ;  Train Loss: 0.96718433 ;  Train Accuracy: 53.344 ;  Val Loss: 0.36212029 ;  Val Accuracy: 92.900 ;
+Epoch: 200 ;  Train Loss: 0.93300324 ;  Train Accuracy: 51.333 ;  Val Loss: 0.35760607 ;  Val Accuracy: 92.940 ;
+Epoch: 201 ;  Train Loss: 0.96804850 ;  Train Accuracy: 52.187 ;  Val Loss: 0.37969186 ;  Val Accuracy: 92.940 ;
+Epoch: 202 ;  Train Loss: 1.00287575 ;  Train Accuracy: 54.838 ;  Val Loss: 0.34736897 ;  Val Accuracy: 92.940 ;
+Epoch: 203 ;  Train Loss: 0.97152704 ;  Train Accuracy: 50.556 ;  Val Loss: 0.35426236 ;  Val Accuracy: 92.920 ;
+Epoch: 204 ;  Train Loss: 0.97446755 ;  Train Accuracy: 47.964 ;  Val Loss: 0.32851766 ;  Val Accuracy: 93.080 ;
+Epoch: 205 ;  Train Loss: 0.99531944 ;  Train Accuracy: 53.022 ;  Val Loss: 0.35828298 ;  Val Accuracy: 92.940 ;
+Epoch: 206 ;  Train Loss: 0.98743122 ;  Train Accuracy: 50.182 ;  Val Loss: 0.34424449 ;  Val Accuracy: 93.100 ;
+Epoch: 207 ;  Train Loss: 0.98717027 ;  Train Accuracy: 50.471 ;  Val Loss: 0.35409140 ;  Val Accuracy: 92.920 ;
+Epoch: 208 ;  Train Loss: 0.93289933 ;  Train Accuracy: 54.084 ;  Val Loss: 0.33112573 ;  Val Accuracy: 92.860 ;
+Epoch: 209 ;  Train Loss: 0.98577602 ;  Train Accuracy: 48.142 ;  Val Loss: 0.36391489 ;  Val Accuracy: 92.800 ;
+Epoch: 210 ;  Train Loss: 0.95160250 ;  Train Accuracy: 47.558 ;  Val Loss: 0.36442683 ;  Val Accuracy: 92.860 ;
+Epoch: 211 ;  Train Loss: 0.94615403 ;  Train Accuracy: 53.191 ;  Val Loss: 0.34751455 ;  Val Accuracy: 92.840 ;
+Epoch: 212 ;  Train Loss: 0.97266591 ;  Train Accuracy: 52.191 ;  Val Loss: 0.36384047 ;  Val Accuracy: 92.920 ;
+Epoch: 213 ;  Train Loss: 0.98272689 ;  Train Accuracy: 51.513 ;  Val Loss: 0.33955684 ;  Val Accuracy: 92.960 ;
+Epoch: 214 ;  Train Loss: 0.98277012 ;  Train Accuracy: 52.260 ;  Val Loss: 0.35508651 ;  Val Accuracy: 92.860 ;
+Epoch: 215 ;  Train Loss: 0.97444867 ;  Train Accuracy: 49.262 ;  Val Loss: 0.36949572 ;  Val Accuracy: 92.860 ;
+Epoch: 216 ;  Train Loss: 0.99304298 ;  Train Accuracy: 55.840 ;  Val Loss: 0.36900522 ;  Val Accuracy: 92.940 ;
+Epoch: 217 ;  Train Loss: 0.97584831 ;  Train Accuracy: 53.042 ;  Val Loss: 0.35227242 ;  Val Accuracy: 92.960 ;
+Epoch: 218 ;  Train Loss: 0.99709364 ;  Train Accuracy: 50.693 ;  Val Loss: 0.36682546 ;  Val Accuracy: 93.020 ;
+Epoch: 219 ;  Train Loss: 0.94818935 ;  Train Accuracy: 50.078 ;  Val Loss: 0.34612620 ;  Val Accuracy: 92.960 ;
+Epoch: 220 ;  Train Loss: 0.95111158 ;  Train Accuracy: 48.547 ;  Val Loss: 0.34609230 ;  Val Accuracy: 92.960 ;
+Epoch: 221 ;  Train Loss: 1.00694326 ;  Train Accuracy: 50.771 ;  Val Loss: 0.37154916 ;  Val Accuracy: 92.840 ;
+Epoch: 222 ;  Train Loss: 1.01315430 ;  Train Accuracy: 49.276 ;  Val Loss: 0.37796120 ;  Val Accuracy: 92.920 ;
+Epoch: 223 ;  Train Loss: 0.95903705 ;  Train Accuracy: 47.613 ;  Val Loss: 0.35739380 ;  Val Accuracy: 92.800 ;
+Epoch: 224 ;  Train Loss: 0.95235086 ;  Train Accuracy: 51.582 ;  Val Loss: 0.34456122 ;  Val Accuracy: 93.040 ;
+Epoch: 225 ;  Train Loss: 0.94155052 ;  Train Accuracy: 49.927 ;  Val Loss: 0.34046225 ;  Val Accuracy: 92.980 ;
+Epoch: 226 ;  Train Loss: 0.99840944 ;  Train Accuracy: 51.473 ;  Val Loss: 0.34346112 ;  Val Accuracy: 92.840 ;
+Epoch: 227 ;  Train Loss: 0.98968502 ;  Train Accuracy: 48.611 ;  Val Loss: 0.33678214 ;  Val Accuracy: 93.060 ;
+Epoch: 228 ;  Train Loss: 0.99322483 ;  Train Accuracy: 51.800 ;  Val Loss: 0.35704459 ;  Val Accuracy: 93.060 ;
+Epoch: 229 ;  Train Loss: 0.97549480 ;  Train Accuracy: 49.624 ;  Val Loss: 0.33776271 ;  Val Accuracy: 93.020 ;
+Epoch: 230 ;  Train Loss: 0.99188124 ;  Train Accuracy: 51.144 ;  Val Loss: 0.38891793 ;  Val Accuracy: 92.820 ;
+Epoch: 231 ;  Train Loss: 0.93051026 ;  Train Accuracy: 51.767 ;  Val Loss: 0.36902093 ;  Val Accuracy: 92.920 ;
+Epoch: 232 ;  Train Loss: 1.00878953 ;  Train Accuracy: 52.004 ;  Val Loss: 0.36004524 ;  Val Accuracy: 93.020 ;
+Epoch: 233 ;  Train Loss: 0.99301615 ;  Train Accuracy: 50.976 ;  Val Loss: 0.32876048 ;  Val Accuracy: 93.080 ;
+Epoch: 234 ;  Train Loss: 0.97173400 ;  Train Accuracy: 50.100 ;  Val Loss: 0.40022433 ;  Val Accuracy: 92.740 ;
+Epoch: 235 ;  Train Loss: 1.02754336 ;  Train Accuracy: 52.482 ;  Val Loss: 0.34691837 ;  Val Accuracy: 92.860 ;
+Epoch: 236 ;  Train Loss: 0.97465978 ;  Train Accuracy: 55.356 ;  Val Loss: 0.34657052 ;  Val Accuracy: 93.020 ;
+Epoch: 237 ;  Train Loss: 0.96225616 ;  Train Accuracy: 54.736 ;  Val Loss: 0.33967178 ;  Val Accuracy: 93.040 ;
+Epoch: 238 ;  Train Loss: 0.99101795 ;  Train Accuracy: 47.727 ;  Val Loss: 0.35379235 ;  Val Accuracy: 93.000 ;
+Epoch: 239 ;  Train Loss: 0.99345357 ;  Train Accuracy: 51.958 ;  Val Loss: 0.35414924 ;  Val Accuracy: 92.880 ;
+Epoch: 240 ;  Train Loss: 0.97216449 ;  Train Accuracy: 53.951 ;  Val Loss: 0.36007300 ;  Val Accuracy: 92.760 ;
+Epoch: 241 ;  Train Loss: 0.98609485 ;  Train Accuracy: 50.427 ;  Val Loss: 0.37713467 ;  Val Accuracy: 92.760 ;
+Epoch: 242 ;  Train Loss: 0.95702832 ;  Train Accuracy: 50.002 ;  Val Loss: 0.36679536 ;  Val Accuracy: 92.940 ;
+Epoch: 243 ;  Train Loss: 1.01278915 ;  Train Accuracy: 51.769 ;  Val Loss: 0.38626389 ;  Val Accuracy: 92.900 ;
+Epoch: 244 ;  Train Loss: 0.96456668 ;  Train Accuracy: 49.684 ;  Val Loss: 0.38031583 ;  Val Accuracy: 92.740 ;
+Epoch: 245 ;  Train Loss: 0.94094587 ;  Train Accuracy: 53.900 ;  Val Loss: 0.36011412 ;  Val Accuracy: 92.960 ;
+Epoch: 246 ;  Train Loss: 0.93139160 ;  Train Accuracy: 48.724 ;  Val Loss: 0.34582777 ;  Val Accuracy: 92.860 ;
+Epoch: 247 ;  Train Loss: 0.98038598 ;  Train Accuracy: 54.851 ;  Val Loss: 0.35958337 ;  Val Accuracy: 92.820 ;
+Epoch: 248 ;  Train Loss: 0.97108596 ;  Train Accuracy: 53.744 ;  Val Loss: 0.32001240 ;  Val Accuracy: 93.080 ;
+Epoch: 249 ;  Train Loss: 1.01520686 ;  Train Accuracy: 54.036 ;  Val Loss: 0.36401712 ;  Val Accuracy: 92.780 ;
+Epoch: 250 ;  Train Loss: 0.94872329 ;  Train Accuracy: 53.718 ;  Val Loss: 0.33340793 ;  Val Accuracy: 92.900 ;
+Epoch: 251 ;  Train Loss: 1.00059365 ;  Train Accuracy: 51.327 ;  Val Loss: 0.40446810 ;  Val Accuracy: 92.660 ;
+Epoch: 252 ;  Train Loss: 0.98848243 ;  Train Accuracy: 47.973 ;  Val Loss: 0.35176665 ;  Val Accuracy: 92.980 ;
+Epoch: 253 ;  Train Loss: 0.97106447 ;  Train Accuracy: 53.087 ;  Val Loss: 0.31017494 ;  Val Accuracy: 93.160 ;
+Epoch: 254 ;  Train Loss: 0.97681396 ;  Train Accuracy: 50.047 ;  Val Loss: 0.35117126 ;  Val Accuracy: 92.960 ;
+Epoch: 255 ;  Train Loss: 0.97946730 ;  Train Accuracy: 55.073 ;  Val Loss: 0.32520108 ;  Val Accuracy: 93.060 ;
+Epoch: 256 ;  Train Loss: 0.98593103 ;  Train Accuracy: 53.527 ;  Val Loss: 0.35267636 ;  Val Accuracy: 92.920 ;
+Epoch: 257 ;  Train Loss: 0.96098603 ;  Train Accuracy: 55.036 ;  Val Loss: 0.35970230 ;  Val Accuracy: 92.800 ;
+Epoch: 258 ;  Train Loss: 0.98657202 ;  Train Accuracy: 53.280 ;  Val Loss: 0.37480903 ;  Val Accuracy: 92.740 ;
+Epoch: 259 ;  Train Loss: 0.99402663 ;  Train Accuracy: 50.202 ;  Val Loss: 0.33897685 ;  Val Accuracy: 92.980 ;
+Epoch: 260 ;  Train Loss: 0.97224752 ;  Train Accuracy: 51.080 ;  Val Loss: 0.34312237 ;  Val Accuracy: 93.060 ;
+Epoch: 261 ;  Train Loss: 0.96708490 ;  Train Accuracy: 49.318 ;  Val Loss: 0.37819595 ;  Val Accuracy: 92.920 ;
+Epoch: 262 ;  Train Loss: 0.95066336 ;  Train Accuracy: 52.204 ;  Val Loss: 0.36701007 ;  Val Accuracy: 92.820 ;
+Epoch: 263 ;  Train Loss: 0.97607233 ;  Train Accuracy: 49.120 ;  Val Loss: 0.36073280 ;  Val Accuracy: 92.960 ;
+Epoch: 264 ;  Train Loss: 0.96438648 ;  Train Accuracy: 51.178 ;  Val Loss: 0.36286692 ;  Val Accuracy: 92.860 ;
+Epoch: 265 ;  Train Loss: 0.97986248 ;  Train Accuracy: 52.127 ;  Val Loss: 0.37344184 ;  Val Accuracy: 92.820 ;
+Epoch: 266 ;  Train Loss: 0.95973055 ;  Train Accuracy: 52.533 ;  Val Loss: 0.34325511 ;  Val Accuracy: 92.980 ;
+Epoch: 267 ;  Train Loss: 0.98285931 ;  Train Accuracy: 54.527 ;  Val Loss: 0.38244132 ;  Val Accuracy: 92.840 ;
+Epoch: 268 ;  Train Loss: 0.97941970 ;  Train Accuracy: 51.771 ;  Val Loss: 0.30458585 ;  Val Accuracy: 93.160 ;
+Epoch: 269 ;  Train Loss: 0.97101566 ;  Train Accuracy: 49.993 ;  Val Loss: 0.35575768 ;  Val Accuracy: 93.000 ;
+Epoch: 270 ;  Train Loss: 0.99134043 ;  Train Accuracy: 53.318 ;  Val Loss: 0.35375240 ;  Val Accuracy: 93.020 ;
+Epoch: 271 ;  Train Loss: 0.94676172 ;  Train Accuracy: 49.209 ;  Val Loss: 0.35995079 ;  Val Accuracy: 92.860 ;
+Epoch: 272 ;  Train Loss: 0.98868387 ;  Train Accuracy: 53.209 ;  Val Loss: 0.34820016 ;  Val Accuracy: 92.860 ;
+Epoch: 273 ;  Train Loss: 0.97918961 ;  Train Accuracy: 48.780 ;  Val Loss: 0.37513728 ;  Val Accuracy: 92.700 ;
+Epoch: 274 ;  Train Loss: 0.97363892 ;  Train Accuracy: 53.422 ;  Val Loss: 0.37156055 ;  Val Accuracy: 92.900 ;
+Epoch: 275 ;  Train Loss: 0.95777637 ;  Train Accuracy: 51.913 ;  Val Loss: 0.34886130 ;  Val Accuracy: 92.980 ;
+Epoch: 276 ;  Train Loss: 0.96389756 ;  Train Accuracy: 55.784 ;  Val Loss: 0.35945154 ;  Val Accuracy: 92.880 ;
+Epoch: 277 ;  Train Loss: 0.97892465 ;  Train Accuracy: 53.636 ;  Val Loss: 0.32085152 ;  Val Accuracy: 93.160 ;
+Epoch: 278 ;  Train Loss: 0.99627088 ;  Train Accuracy: 49.269 ;  Val Loss: 0.36641092 ;  Val Accuracy: 92.920 ;
+Epoch: 279 ;  Train Loss: 0.97468867 ;  Train Accuracy: 50.342 ;  Val Loss: 0.37387922 ;  Val Accuracy: 92.800 ;
+Epoch: 280 ;  Train Loss: 0.98519550 ;  Train Accuracy: 49.756 ;  Val Loss: 0.39930194 ;  Val Accuracy: 92.760 ;
+Epoch: 281 ;  Train Loss: 0.96007830 ;  Train Accuracy: 49.158 ;  Val Loss: 0.37799482 ;  Val Accuracy: 92.800 ;
+Epoch: 282 ;  Train Loss: 0.99533330 ;  Train Accuracy: 48.798 ;  Val Loss: 0.33080909 ;  Val Accuracy: 93.100 ;
+Epoch: 283 ;  Train Loss: 0.99117231 ;  Train Accuracy: 53.751 ;  Val Loss: 0.32630061 ;  Val Accuracy: 93.020 ;
+Epoch: 284 ;  Train Loss: 0.97129447 ;  Train Accuracy: 51.560 ;  Val Loss: 0.35598097 ;  Val Accuracy: 92.900 ;
+Epoch: 285 ;  Train Loss: 0.93366557 ;  Train Accuracy: 52.931 ;  Val Loss: 0.36004216 ;  Val Accuracy: 92.720 ;
+Epoch: 286 ;  Train Loss: 0.97436337 ;  Train Accuracy: 53.240 ;  Val Loss: 0.36402880 ;  Val Accuracy: 92.860 ;
+Epoch: 287 ;  Train Loss: 1.01245131 ;  Train Accuracy: 50.167 ;  Val Loss: 0.37084630 ;  Val Accuracy: 92.940 ;
+Epoch: 288 ;  Train Loss: 0.98845771 ;  Train Accuracy: 48.376 ;  Val Loss: 0.37920046 ;  Val Accuracy: 92.860 ;
+Epoch: 289 ;  Train Loss: 1.01028080 ;  Train Accuracy: 54.176 ;  Val Loss: 0.34210679 ;  Val Accuracy: 92.980 ;
+Epoch: 290 ;  Train Loss: 0.97139988 ;  Train Accuracy: 49.160 ;  Val Loss: 0.34491020 ;  Val Accuracy: 92.820 ;
+Epoch: 291 ;  Train Loss: 0.90582713 ;  Train Accuracy: 51.124 ;  Val Loss: 0.37214262 ;  Val Accuracy: 92.880 ;
+Epoch: 292 ;  Train Loss: 0.93399907 ;  Train Accuracy: 57.076 ;  Val Loss: 0.34400105 ;  Val Accuracy: 93.060 ;
+Epoch: 293 ;  Train Loss: 1.00148489 ;  Train Accuracy: 49.596 ;  Val Loss: 0.38204375 ;  Val Accuracy: 92.860 ;
+Epoch: 294 ;  Train Loss: 1.00315660 ;  Train Accuracy: 50.984 ;  Val Loss: 0.34048551 ;  Val Accuracy: 93.100 ;
+Epoch: 295 ;  Train Loss: 0.95664531 ;  Train Accuracy: 49.569 ;  Val Loss: 0.38492934 ;  Val Accuracy: 92.780 ;
+Epoch: 296 ;  Train Loss: 0.96349738 ;  Train Accuracy: 50.747 ;  Val Loss: 0.36544861 ;  Val Accuracy: 92.940 ;
+Epoch: 297 ;  Train Loss: 0.94797347 ;  Train Accuracy: 53.402 ;  Val Loss: 0.33919103 ;  Val Accuracy: 92.980 ;
+Epoch: 298 ;  Train Loss: 0.99363668 ;  Train Accuracy: 47.058 ;  Val Loss: 0.36522738 ;  Val Accuracy: 92.820 ;
+Epoch: 299 ;  Train Loss: 0.99424184 ;  Train Accuracy: 51.404 ;  Val Loss: 0.37781680 ;  Val Accuracy: 92.860 ;
+Epoch: 300 ;  Train Loss: 1.00568058 ;  Train Accuracy: 50.633 ;  Val Loss: 0.37664102 ;  Val Accuracy: 92.920 ;
+Epoch: 301 ;  Train Loss: 0.96469752 ;  Train Accuracy: 51.671 ;  Val Loss: 0.36569427 ;  Val Accuracy: 92.840 ;
+Epoch: 302 ;  Train Loss: 0.99302356 ;  Train Accuracy: 49.538 ;  Val Loss: 0.33824238 ;  Val Accuracy: 92.980 ;
+Epoch: 303 ;  Train Loss: 0.95997182 ;  Train Accuracy: 51.711 ;  Val Loss: 0.33201041 ;  Val Accuracy: 92.980 ;
+Epoch: 304 ;  Train Loss: 0.97613597 ;  Train Accuracy: 51.684 ;  Val Loss: 0.37151412 ;  Val Accuracy: 92.840 ;
+Epoch: 305 ;  Train Loss: 0.98008780 ;  Train Accuracy: 52.927 ;  Val Loss: 0.37863048 ;  Val Accuracy: 92.800 ;
+Epoch: 306 ;  Train Loss: 0.98795733 ;  Train Accuracy: 54.169 ;  Val Loss: 0.37449445 ;  Val Accuracy: 92.880 ;
+Epoch: 307 ;  Train Loss: 0.96959205 ;  Train Accuracy: 52.896 ;  Val Loss: 0.36818816 ;  Val Accuracy: 93.000 ;
+Epoch: 308 ;  Train Loss: 1.00876724 ;  Train Accuracy: 52.900 ;  Val Loss: 0.39256758 ;  Val Accuracy: 92.700 ;
+Epoch: 309 ;  Train Loss: 0.97420523 ;  Train Accuracy: 51.802 ;  Val Loss: 0.33064915 ;  Val Accuracy: 93.080 ;
+
+Epochs: 309 ;	Test Loss: 0.33041463 ; 	Test Accuracy: 92.880 ;
+
+Best Accuracy: 93.400
+
+
+Saving Error Plot...
+
+Error Plot saved (AA7Test_error_plot.png)
+

@@ -1,0 +1,95 @@
+
+
+Run Config: 
+------------------------------
+data_path          : CIFAR10/
+train_batch_size   : 128
+test_batch_size    : 100
+epochs             : 50
+model              : ReshNet
+optimizer          : sgdn
+learning_rate      : 0.1
+momentum           : 0.9
+weight_decay       : 0.0005
+schedule           : False
+save               : False
+print_summary      : False
+no_training        : False
+save_plot          : True
+output_file_prefix : zReshNet_testll1_5
+
+Running on  CUDA 
+
+Files already downloaded and verified
+Files already downloaded and verified
+
+
+Model Config: 
+-------------------------------------
+N (# Layers)	: 4 
+B (# Blocks)	: [10, 8, 10, 14] 
+C (# Channels)	: [16, 32, 64, 128] 
+F (Conv Kernel)	: [3, 3, 3, 3] 
+K (Skip Kernel)	: [1, 1, 1, 1] 
+P (Pool Kernel)	: 4
+Training...
+
+
+Epoch: 1 ;	Train Loss: 2.39060507 ;	Train Accuracy: 15.132 ;	Test Loss: 2.13278596 ; 	Test Accuracy: 19.470 ;
+Epoch: 2 ;	Train Loss: 1.97319227 ;	Train Accuracy: 25.004 ;	Test Loss: 1.84276433 ; 	Test Accuracy: 32.500 ;
+Epoch: 3 ;	Train Loss: 1.74607550 ;	Train Accuracy: 35.292 ;	Test Loss: 1.60025884 ; 	Test Accuracy: 41.100 ;
+Epoch: 4 ;	Train Loss: 1.62274749 ;	Train Accuracy: 39.934 ;	Test Loss: 1.48741297 ; 	Test Accuracy: 44.660 ;
+Epoch: 5 ;	Train Loss: 1.48439470 ;	Train Accuracy: 45.532 ;	Test Loss: 1.37235247 ; 	Test Accuracy: 49.860 ;
+Epoch: 6 ;	Train Loss: 1.31756740 ;	Train Accuracy: 52.100 ;	Test Loss: 1.22254244 ; 	Test Accuracy: 55.850 ;
+Epoch: 7 ;	Train Loss: 1.14813524 ;	Train Accuracy: 58.998 ;	Test Loss: 1.32172148 ; 	Test Accuracy: 55.350 ;
+Epoch: 8 ;	Train Loss: 0.99790948 ;	Train Accuracy: 64.596 ;	Test Loss: 1.26185848 ; 	Test Accuracy: 57.470 ;
+Epoch: 9 ;	Train Loss: 0.86457217 ;	Train Accuracy: 69.648 ;	Test Loss: 1.33405645 ; 	Test Accuracy: 58.570 ;
+Epoch: 10 ;	Train Loss: 0.78475919 ;	Train Accuracy: 72.714 ;	Test Loss: 0.85221527 ; 	Test Accuracy: 70.900 ;
+Epoch: 11 ;	Train Loss: 0.72811448 ;	Train Accuracy: 74.948 ;	Test Loss: 1.02187533 ; 	Test Accuracy: 65.610 ;
+Epoch: 12 ;	Train Loss: 0.68423577 ;	Train Accuracy: 76.486 ;	Test Loss: 0.78399437 ; 	Test Accuracy: 74.290 ;
+Epoch: 13 ;	Train Loss: 0.65279799 ;	Train Accuracy: 77.650 ;	Test Loss: 0.96392658 ; 	Test Accuracy: 68.880 ;
+Epoch: 14 ;	Train Loss: 0.62977288 ;	Train Accuracy: 78.216 ;	Test Loss: 0.82599045 ; 	Test Accuracy: 72.730 ;
+Epoch: 15 ;	Train Loss: 0.59933793 ;	Train Accuracy: 79.530 ;	Test Loss: 0.67865580 ; 	Test Accuracy: 76.430 ;
+Epoch: 16 ;	Train Loss: 0.58698076 ;	Train Accuracy: 79.762 ;	Test Loss: 0.65178014 ; 	Test Accuracy: 76.440 ;
+Epoch: 17 ;	Train Loss: 0.56722375 ;	Train Accuracy: 80.528 ;	Test Loss: 0.60066892 ; 	Test Accuracy: 79.710 ;
+Epoch: 18 ;	Train Loss: 0.55648972 ;	Train Accuracy: 80.882 ;	Test Loss: 0.80109217 ; 	Test Accuracy: 73.910 ;
+Epoch: 19 ;	Train Loss: 0.54836171 ;	Train Accuracy: 81.242 ;	Test Loss: 0.86867344 ; 	Test Accuracy: 72.310 ;
+Epoch: 20 ;	Train Loss: 0.53512747 ;	Train Accuracy: 81.682 ;	Test Loss: 0.59456312 ; 	Test Accuracy: 79.970 ;
+Epoch: 21 ;	Train Loss: 0.52330760 ;	Train Accuracy: 82.178 ;	Test Loss: 0.65065075 ; 	Test Accuracy: 78.070 ;
+Epoch: 22 ;	Train Loss: 0.51607606 ;	Train Accuracy: 82.332 ;	Test Loss: 0.73385965 ; 	Test Accuracy: 75.400 ;
+Epoch: 23 ;	Train Loss: 0.50863942 ;	Train Accuracy: 82.610 ;	Test Loss: 0.58551087 ; 	Test Accuracy: 80.710 ;
+Epoch: 24 ;	Train Loss: 0.50248046 ;	Train Accuracy: 82.774 ;	Test Loss: 0.54902566 ; 	Test Accuracy: 81.590 ;
+Epoch: 25 ;	Train Loss: 0.49589722 ;	Train Accuracy: 82.976 ;	Test Loss: 0.85534780 ; 	Test Accuracy: 73.730 ;
+Epoch: 26 ;	Train Loss: 0.48930046 ;	Train Accuracy: 83.312 ;	Test Loss: 0.62033714 ; 	Test Accuracy: 78.510 ;
+Epoch: 27 ;	Train Loss: 0.48333216 ;	Train Accuracy: 83.578 ;	Test Loss: 0.72051735 ; 	Test Accuracy: 77.430 ;
+Epoch: 28 ;	Train Loss: 0.48077385 ;	Train Accuracy: 83.422 ;	Test Loss: 0.67006780 ; 	Test Accuracy: 77.400 ;
+Epoch: 29 ;	Train Loss: 0.47769567 ;	Train Accuracy: 83.514 ;	Test Loss: 0.63383947 ; 	Test Accuracy: 78.920 ;
+Epoch: 30 ;	Train Loss: 0.47192201 ;	Train Accuracy: 83.816 ;	Test Loss: 0.58380405 ; 	Test Accuracy: 79.750 ;
+Epoch: 31 ;	Train Loss: 0.46292403 ;	Train Accuracy: 84.116 ;	Test Loss: 0.61291632 ; 	Test Accuracy: 79.570 ;
+Epoch: 32 ;	Train Loss: 0.46902338 ;	Train Accuracy: 83.770 ;	Test Loss: 0.85207691 ; 	Test Accuracy: 74.250 ;
+Epoch: 33 ;	Train Loss: 0.45646492 ;	Train Accuracy: 84.508 ;	Test Loss: 0.77902006 ; 	Test Accuracy: 74.060 ;
+Epoch: 34 ;	Train Loss: 0.46159636 ;	Train Accuracy: 84.074 ;	Test Loss: 0.61483213 ; 	Test Accuracy: 79.210 ;
+Epoch: 35 ;	Train Loss: 0.44917439 ;	Train Accuracy: 84.744 ;	Test Loss: 0.76147346 ; 	Test Accuracy: 75.440 ;
+Epoch: 36 ;	Train Loss: 0.45008364 ;	Train Accuracy: 84.762 ;	Test Loss: 0.57384607 ; 	Test Accuracy: 80.940 ;
+Epoch: 37 ;	Train Loss: 0.44173379 ;	Train Accuracy: 84.906 ;	Test Loss: 0.67599199 ; 	Test Accuracy: 78.770 ;
+Epoch: 38 ;	Train Loss: 0.44821211 ;	Train Accuracy: 84.762 ;	Test Loss: 0.55555138 ; 	Test Accuracy: 81.010 ;
+Epoch: 39 ;	Train Loss: 0.44373448 ;	Train Accuracy: 84.840 ;	Test Loss: 0.59759445 ; 	Test Accuracy: 80.320 ;
+Epoch: 40 ;	Train Loss: 0.43743280 ;	Train Accuracy: 84.984 ;	Test Loss: 0.63948357 ; 	Test Accuracy: 78.610 ;
+Epoch: 41 ;	Train Loss: 0.44206765 ;	Train Accuracy: 84.780 ;	Test Loss: 0.56575027 ; 	Test Accuracy: 81.180 ;
+Epoch: 42 ;	Train Loss: 0.43648461 ;	Train Accuracy: 84.996 ;	Test Loss: 0.74307566 ; 	Test Accuracy: 75.960 ;
+Epoch: 43 ;	Train Loss: 0.43492580 ;	Train Accuracy: 85.126 ;	Test Loss: 0.52751191 ; 	Test Accuracy: 82.570 ;
+Epoch: 44 ;	Train Loss: 0.43617867 ;	Train Accuracy: 85.154 ;	Test Loss: 0.54548233 ; 	Test Accuracy: 81.790 ;
+Epoch: 45 ;	Train Loss: 0.43846249 ;	Train Accuracy: 84.996 ;	Test Loss: 0.63515818 ; 	Test Accuracy: 79.680 ;
+Epoch: 46 ;	Train Loss: 0.43024729 ;	Train Accuracy: 85.340 ;	Test Loss: 0.87500751 ; 	Test Accuracy: 72.720 ;
+Epoch: 47 ;	Train Loss: 0.43084933 ;	Train Accuracy: 85.218 ;	Test Loss: 0.53577071 ; 	Test Accuracy: 82.230 ;
+Epoch: 48 ;	Train Loss: 0.43209696 ;	Train Accuracy: 85.174 ;	Test Loss: 0.58463332 ; 	Test Accuracy: 80.870 ;
+Epoch: 49 ;	Train Loss: 0.42729034 ;	Train Accuracy: 85.320 ;	Test Loss: 0.55867195 ; 	Test Accuracy: 80.810 ;
+Epoch: 50 ;	Train Loss: 0.42485409 ;	Train Accuracy: 85.742 ;	Test Loss: 0.56692804 ; 	Test Accuracy: 81.350 ;
+
+
+Best Accuracy: 82.570
+
+Saving Error Plot...
+
+Error Plot saved (zReshNet_testll1_5_error_plot.png)
+

@@ -1,6 +1,6 @@
 # **NYU-ResNet-On-Steroids**
 
-A project based on ResNet aimed at improving ResNEt accuracy on CIFAR10 dataset while keeping the the model parameters under 5 million.
+A project aimed at improving ResNet accuracy on CIFAR10 dataset while keeping the the model parameters under 5 million.
 
 ---
 ## **Project Stucture**
@@ -19,9 +19,9 @@ A project based on ResNet aimed at improving ResNEt accuracy on CIFAR10 dataset 
     ```bash
     python resnet.py -e 100 -o adadelta -an -sc -mx -v -m project1_model -r AA4Test
     ```
-3. To save results to a file -
+3. To save logs to a file in logs directory -
     ```bash
-    python resnet.py -e 100 -o adadelta -an -sc -mx -v -m project1_model -r AA4Test >> ./logs/<filename>.log
+    python resnet.py -e 100 -o adadelta -an -sc -mx -v -m project1_model -r AA4Test >> logs/<filename>.log
     ```
     > Replace `<filename>` with your choice of file
 

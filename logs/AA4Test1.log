@@ -1,0 +1,59 @@
+
+
+Run Config: 
+------------------------------
+data_path          : CIFAR10/
+train_batch_size   : 128
+val_batch_size     : 256
+test_batch_size    : 256
+epochs             : 2
+test_transform     : TestTransform_1
+train_transform    : TrainTransform_1
+resume             : AA4Test
+model              : project1_model
+optimizer          : adadelta
+learning_rate      : 0.1
+momentum           : 0.9
+weight_decay       : 0.0005
+mixup              : True
+schedule           : True
+anneal             : True
+validate           : True
+save               : True
+save_state         : False
+print_summary      : False
+no_training        : False
+save_plot          : True
+plot_transforms    : False
+plot_conf_mat      : False
+output_file_prefix : AA4Test1
+
+Running on  CUDA 
+
+Number of GPUs: 1
+Cuda Capability: (7, 0) 
+
+Files already downloaded and verified
+Files already downloaded and verified
+
+
+Resuming from checkpoint..
+
+
+Training...
+
+
+Epoch: 238 ;  Train Loss: 0.80655059 ;  Train Accuracy: 57.253 ;  Val Loss: 0.32434609 ;  Val Accuracy: 94.420 ;
+Epoch: 239 ;  Train Loss: 0.81021583 ;  Train Accuracy: 52.833 ;  Val Loss: 0.29886006 ;  Val Accuracy: 94.680 ;
+
+Best Network state Loaded
+
+Epochs: 239 ;	Test Loss: 0.29293186 ; 	Test Accuracy: 94.590 ;
+
+Best Accuracy: 94.840
+
+
+Saving Error Plot...
+
+Error Plot saved (AA4Test1_error_plot.png)
+
