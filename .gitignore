@@ -127,3 +127,22 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Include gitignore config
+!.gitignore
+
+# Data Directory
+CIFAR10/
+
+# Python Cache
+__pycache__/
+.ipynb_checkpoints
+
+# Ignore test files
+test.py
+test.ipynb
+
+# Ignore sh and sbatch files
+*.sh
+*.sbatch
