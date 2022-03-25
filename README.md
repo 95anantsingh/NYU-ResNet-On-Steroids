@@ -84,7 +84,7 @@ python resnet.py -h
 ---
 ## **Documentation**
 
-1. Project report can be found at [`docs/project_report.pdf`](https://github.com/95anantsingh/NYU-ResNet-On-Steroids/tree/main/docs/project_report.pdf)
+1. Project report can be found at [docs/project_report.pdf](https://github.com/95anantsingh/NYU-ResNet-On-Steroids/tree/main/docs/project_report.pdf)
 2. Logs maintained at this [Google Sheet](https://docs.google.com/spreadsheets/d/1mOcrw_yWPL7V_gtQM-UxgU_kDUZvHhMDEDV9wRH-hGY/edit?usp=sharing)
 
 > This Project was part of graduate level Deep Learning course at New York University
